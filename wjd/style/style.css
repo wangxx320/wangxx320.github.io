@@ -1,0 +1,498 @@
+/* CSS Document */
+*{
+	padding:0px;
+	margin:0px;}
+body{
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#000;}
+a/*行级元素 做样式就不需要转块级 行级元素不用设置行高*/{
+	text-decoration:none;}
+ul{
+	list-style-type:none;}
+.clear{
+	clear:both;}
+/*head*/
+#head{
+	background:#F1F1F1;
+	height:30px;}
+#head_con{
+	width:1210px;
+	margin:0 auto;}
+#head_con a{
+	color:#666;}
+#head_con a:hover{
+	color:#C81623;}
+#head_con_left{
+	line-height:30px;/*文字居中*/
+	float:left;}
+#head_con_right{
+	line-height:30px;
+	float:right;}
+#head_con_right .red{
+	float:left;
+	color:#C81623;}
+#head_con_right ul li{
+/*块级元素 要有下拉样式 所以不能转换成行级元素 因为行级元素没有高度与宽度 这里用到float属性将其浮动到一行*/
+	color:#DDD;
+	padding-left:11px;/*a标签距li的距离*/
+	float:left;}
+#head_con_right ul{
+	float:left;}/*浮动是因为right右浮动使ul不能整行显示 所以将UI也左浮动*/
+#head_con_right ul li img{
+	float:left;/*只有浮动才可以设置margin-top的距离*/
+	margin-top:3px;}
+#head_con_right ul li a{
+	margin-right:12px;}/*a标签之间的右距离*/
+
+/*jd_gg*/
+
+#jd_gg{
+	height:80px;
+	background:#FB3939;}
+#jd_gg_con{
+	width:1210px;
+	margin:0 auto;}
+	
+/*search*/
+
+#search{
+	height:100px;}
+#search_con{
+	width:1210px;
+	margin:0 auto;}
+#search_con_left{
+	float:left;
+	margin-top:20px;}
+#search_con_right{
+	float:right;
+	margin:22px 40px 0 0;}
+#search_text{
+	float:left;/*与搜索框贴合*/
+	width:452px;
+	height:32px;
+	border:2px solid #B61D1D;}
+#search_butt{
+	width:82px;
+	height:36px;
+	background:#B61D1D;
+	border:none;
+	font-size:17px;
+	font-weight:bold;
+	color:#fff;}
+#search_con_conter ul li a{
+	color:#666;
+	font-size:12px;}
+#search_con_conter ul li{
+	display:inline;
+	line-height:27px;/*li的行高*/
+	padding-right:3px;}/*a标签距li右距离*/
+#search_con_conter .s_red{
+	color:#C81623;}
+#search_con_conter{
+	float:left;
+	margin:25px 0 0 100px;}
+	
+/*menu*/
+
+#menu{
+	height:44px;
+	border-bottom:2px solid #81191A;}
+#menu_con{
+	width:1210px;
+	margin:0 auto;
+	font-family:"Microsoft YaHei UI";}
+#menu_con h3{
+	float:left;
+	width:200px;
+	padding-left:10px;
+	font-size:15px;
+	color:#fff;
+	background:#81191A;
+	line-height:44px;
+	font-weight:500px;}
+#menu_con ul{
+	float:left;
+	margin-left:12px;/**/
+	line-height:44px;}
+#menu_con ul li{
+	display:inline;
+	font-size:16px;
+	margin-right:40px;}
+#menu_con ul li a{
+	color:#333;}
+#menu_con ul li a:hover{
+	color:#C81623;}
+	
+/*content*/
+#content{
+	height:466px;}
+#content_con{
+	width:1210px;
+	margin:0 auto;}
+#content_con_left{
+	width:210px;
+	height:466px;
+	float:left;
+	background:#C81623;/*小盒子不能继承大盒子的高度因为没有内容*/}
+#content_con_left ul{
+	font-family:"Microsoft YaHei UI";
+	padding-left:10px;}
+#content_con_left ul li{
+	line-height:31px;}
+#content_con_left ul li a{
+	color:#FFF;}
+#content_con_left ul li span{
+	float:right;
+	margin-right:3px;
+	color:#FFF;}
+#content_con_conter{
+	float:left;
+	width:730px;
+	height:454px;
+	margin:12px 0 0 10px;
+	background:#06F;}
+#content_con_right{
+	width:250px;
+	height:454px;
+	margin-top:12px;
+	float:right;}
+#content_con_right_top{
+	height:164px;
+	border:1px solid #E4E4E4;}
+#content_con_right_top span{
+	float:right;
+	font-size:12px;
+	margin-right:15px;}
+#content_con_right_top h3{
+	font-size:16px;
+	font-weight:500;
+	font-family:"Microsoft YaHei UI";
+	line-height:30px;
+	color:#666;
+	border-bottom:1px dotted #E4E4E4;
+	padding-left:15px;}
+#content_con_right_top ul{
+	margin-top:5px;
+	padding:0 15px;}
+#content_con_right_top ul li{
+	line-height:24px;
+	font-size:12px;}
+#content_con_right_top ul li a{
+	color:#666;}
+
+#content_con_right_mi{
+	height:210px;}
+#content_con_right_mi table{
+	border-collapse:collapse;}
+#content_con_right_mi table tr td{
+	border:1px solid #E4E4E4;
+	height:69px;}
+#content_con_right_mi table tr{
+	height:69px;}
+#content_con_right_mi table tr td img{
+	width:100%;
+	height:69px;}
+#content_con_right_bottom{
+	height:72px;}
+#content_con_right_bottom img{
+	height:72px;
+	margin-top:5px;
+	width:100%;}
+
+/*jrtj*/
+#jrtj{
+	height:164px;
+	margin-top:10px;}
+#jrtj_con{
+	width:1210px;
+	margin:0 auto;}
+#jrtj_con_lfet{
+	width:210px;
+	float:left;}
+#jrtj_con img{
+	width:100%;
+	height:164px;}
+#jrtj_con_right{
+	float:right;}
+#jrtj_con_right ul li{
+	float:left;
+	margin-right:1px;
+	width:249px;}
+
+/*#cnxh*/
+#cnxh{
+	height:269px;
+	margin-top:20px;
+	font-family:"Microsoft YaHei UI";}
+#cnxh_con{
+	width:1210px;
+	margin:0 auto;}
+#cnxh_con h3{
+	font-size:19px;
+	font-weight:300;
+	line-height:30px;}
+#cnxh_con h3 img{
+	position:relative;
+	top:3px;}
+#cnxh_con h3 span{
+	float:right;
+	font-size:12px;}
+#cnxh_con ul{
+	padding-top:20px;
+	border:1px solid #999;}
+#cnxh_con ul li{
+	float:left;
+	width:201px;}
+#cnxh_con ul li img{
+	display:block;
+	margin:0 auto;}/*图片居中必须先块化*/
+#cnxh_con .cnxh_text{
+	height:70px;
+	padding:0 32px 0 32px;
+	font-size:10px;
+	line-height:20px;
+	border-right:1px solid #999;
+	margin-bottom:15px;}
+#cnxh_con .delete{
+	border-right:none;}
+#cnxh_con .cnxh_text a{
+	color:#666;}
+#cnxh_con .cnxh_text span{
+	color:#B51D1A;
+	line-height:30px;
+	font-size:16px;}
+
+/*#pzsh*/
+#pzsh{
+	height:446px;
+	margin-top:20px;
+	font-family:"Microsoft YaHei UI";}
+#pzsh_con{
+	width:1210px;
+	margin:0 auto;}
+#pzsh_con h3{
+	line-height:36px;
+	font-size:20px;
+	font-weight:300;}
+#pzsh_con_img1{
+	border:1px solid #EDEDED;
+	width:401px;
+	height:405px;
+	float:left;}
+#pzsh_con_img2{
+	width:227px;
+	height:405px;
+	float:left;
+	border-top:1px solid #EDEDED;
+	border-bottom:1px solid #EDEDED;}
+#pzsh_con_img2_one{
+	border-bottom:1px solid #EDEDED;
+	position:relative;}
+#pzsh_con_img2_one .ps_text{
+	position:absolute;
+	top:30px;
+	line-height:22px;
+	padding-left:10px;}
+#pzsh_con_img2_one .ps_text h4{
+	font-size:16px;
+	border:none;
+	text-align:left;
+	margin:0px;}
+#pzsh_con_img2_one .ps_text p{
+	font-size:12px;}
+#pzsh_con_img2_one .ps_text span{
+	font-size:12px;
+	color:#C81623;}
+#pzsh_con_img3{
+	width:404px;
+	height:405px;
+	float:left;
+	border:1px solid #EDEDED;
+	background:#F7F7F7;}
+#pzsh_con_img3_one{
+	border-bottom:1px solid #EDEDED;}
+#pzsh_con_img3_two_left{
+	float:left;
+	border-right:1px solid #EDEDED;}
+#pzsh_con h4{
+	font-size:15px;
+	line-height:40px;
+	border-bottom:1px dashed #EDEDED;
+	text-align:center;
+	margin:0 18px;}
+#pzsh_con_img4{
+	width:169px;
+	height:405px;
+	float:right;
+	border-top:1px solid #EDEDED;
+	border-bottom:1px solid #EDEDED;
+	border-right:1px solid #EDEDED;}
+#pzsh_con_img4 ul{
+	float:left;
+	margin-top:3px;}
+#pzsh_con_img4 ul li{
+	border-bottom:1px dashed #EDEDED;
+	height:56px;}
+#pzsh_con_img4 .img4_menu1{
+	padding-left:14px;
+	border-right:1px dashed #EDEDED;}
+#pzsh_con_img4 .img4_menu2{
+	padding-right:14px;}
+#pzsh_con_img4 ul li img{
+	height:56px;}
+#pzsh_con_img4 .de_border{
+	border-bottom:none;}
+
+/*jd_gg2*/
+
+#jd_gg2{
+	width:1210px;
+	margin:20px auto;}
+#jd_gg2 img{
+	float:left;}
+/*fzxb*/
+#fzxb{
+	width:1210px;
+	margin:0 auto;
+	font-family:"Microsoft YaHei UI";}
+#fzxb_con_head{
+	height:36px;
+	border-bottom:1px solid #C81623;}
+#fzxb_con_head h3{
+	line-height:30px;
+	font-weight:300;
+	font-size:20px;
+	float:left;}
+#fzxb_con_head ul{
+	float:right;
+	line-height:35px;
+	border:1px solid #CCC;
+	border-bottom:none;}
+#fzxb_con_head ul li{
+	float:left;}
+#fzxb_con_head ul li a{
+	padding:0 16px;
+	border-left:1px solid #CCC;
+	color:#333;
+	font-size:14px;}
+.head_one{
+	margin:-1px -1px -1px -1px;
+	height:33px;
+	line-height:33px;
+	border-left:1px solid #C81623;
+	border-right:1px solid #C81623;
+	border-top:3px solid #C81623;}
+#fzxb_con_head .head_one a{
+	border-left:none;
+	color:#C81623;
+	display:block;
+	height:34px;
+	background:#FFF;}/*先让a标签块化，然后将a标签的行高变高，设置白色的背景颜色，所以可以将外侧div的边框盖住,只是向下遮盖，也可以遮盖ul*/
+#fzxb_con_head .head_two a{
+	border-left:none;}
+#fzxb_con_img .fzxb_con_img1{
+	width:330px;
+	height:633px;
+	float:left;
+	border-bottom:1px solid #EDEDED;}
+.fzxb_con_img1_top{
+	height:475px;
+	position:relative;}
+.fzxb_con_img1_top_menu{
+	position:absolute;
+	bottom:130px;
+	background:rgba(255,255,255,0.4) none repeat scroll 0 0 !important;}
+.fzxb_con_img1_top_menu ul li{
+	line-height:50px;
+	padding:0 40px;
+	float:left;}
+.fzxb_con_img1_top_menu ul li a{
+	color:#666666;}
+.fzxb_con_img1_top_fenlei{
+	height:130px;
+	bottom:0px;
+	position:absolute;
+	background:rgba(255,255,255,0.6) none repeat scroll 0 0 !important;
+	overflow:hidden;}
+.fzxb_con_img1_top_fenlei ul li{
+	line-height:21px;
+	padding:0 20px;
+	float:left;}
+.fzxb_con_img1_top_fenlei ul{
+	margin-top:20px;}
+.teshu1{
+	margin-left:25px;}
+.teshu2{
+	margin-left:12px;}
+.fzxb_con_img1_top_fenlei ul li a{
+	padding:5px 5px;
+	font-size:12px;
+	color:#999999;}
+.fzxb_con_img1_top_fenlei ul li a:hover{
+    color:#C81623;}
+.fzxb_con_img1_top_fenlei ul li a span {
+	color:#C81623;}
+#fzxb_con_img .fzxb_con_img2{
+	width:440px;
+	height:633px;
+	float:left;}
+#fzxb_con_img .fzxb_con_img2 img{
+	border:1px solid #EDEDED;
+	border-top:none;}
+#fzxb_con_img .fzxb_con_img3{
+	width:219px;
+	height:633px;
+	float:left;}
+#fzxb_con_img .fzxb_con_img3 img{
+	border-bottom:1px solid #EDEDED;
+	border-right:1px solid #EDEDED;}
+#fzxb_con_img .fzxb_con_img4{
+    width:220px;
+	height:633px;
+	float:right;}
+#fzxb_con_img .fzxb_con_img4 img{
+	border-bottom:1px solid #EDEDED;
+	border-right:1px solid #EDEDED;}
+
+/*jd_gg3*/
+#jd_gg3{
+	width:1210px;
+	margin:20px auto;
+	height:70px;
+	background:#F7F7F6;}
+#jd_gg3 ul{
+	margin-right:5px;
+	height:70px;
+	padding-left:15px;}
+#jd_gg3 ul li{
+	height:40px;
+	float:left;
+	padding:0 15px;
+	border-right:1px dashed #CCCCCC;
+	margin-top:15px;}
+
+#jd_gg3 ul .de_img{
+	border-right:none;}
+
+
+
+
+
+
+
+
+
+.www51buycom { width: 730px; height: 454px; margin:0 auto; position: relative; overflow:hidden;
+float:left;}
+
+/*数字按钮样式*/
+.www51buycom .num {  height: 28px; position: absolute; bottom:15px; left: 15px; zoom:1; z-index:3 }
+.www51buycom .num li { width: 20px; height: 20px; line-height: 20px; text-align: center; font-weight: 400; font-family: "微软雅黑", Arial; color: #FFFFFF; background: #444444; margin-right: 10px; border-radius:50%; cursor:pointer; float: left; }
+.www51buycom .num li.on { background: #FF7700; } /*当前项*/
+
+/*上一个  下一个*/
+.www51buycom .prev,
+.www51buycom .next { display: none; width: 40px; height: 100px; background: url(../images/btn.png) no-repeat; position: absolute; top: 160px;}
+.www51buycom .prev { left: 0; }
+.www51buycom .next { right: 0; background-position: right }

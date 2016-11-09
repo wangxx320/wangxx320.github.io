@@ -1,0 +1,117 @@
+/* CSS Document */
+*{
+	margin:0 auto;
+	padding:0 auto;}
+#main{
+	background:#CCC;
+	width:1340px;
+	height:10955px;}
+#head{
+	background:#9FF;
+	width:1340px;
+	height:255px;}
+#h_top{
+	background:#CFF;
+	width:1340px;
+	height:30px;}
+#h_daohang{
+	background:#3FF;
+	width:1340px;
+	height:80px;}
+#h_sousuo{
+	background:#F9C;
+	width:1340px;
+	height:145px;}
+#body{
+	width:1210px;
+	height:10300px;
+	background:#66F;}
+.one{
+	width:1210px;
+	height:110px;
+	margin-top:20px;
+	background:#F00;}
+.two{
+	width:1210px;
+	height:510px;
+	margin-top:30px;
+	background:#C06;}
+.three{
+	width:1210px;
+	height:65px;
+	margin-top:10px;
+	background:#FC6;}
+.four{
+	width:1210px;
+	height:510px;
+	margin-top:25px;
+	background:#399;}
+#one{
+	width:1210px;
+	height:470px;
+	background:#996;}
+#two{
+	width:1210px;
+	height:150px;
+	margin-top:10px;
+	background:#09F;}
+#three{
+	width:1210px;
+	height:230px;
+	margin-top:70px;
+	background:#C9C;}
+#four{
+	width:1210px;
+	height:405px;
+	margin-top:60px;
+	background:#9FC;}
+#six{
+	width:1210px;
+	height:795px;
+	margin-top:65px;
+	background:#93F;}
+#seven{
+	width:1210px;
+	height:505px;
+	margin-top:25px;
+	background:#9CF;}
+#six1{
+	width:1210px;
+	height:110px;
+	margin-top:25px;
+	background:#CF0;}
+#five2{
+	width:1210px;
+	height:165px;
+	background:#F03;}
+#six2{
+	width:1210px;
+	height:510px;
+	background:#3CF;}
+#ten2{
+	margin-top:60px;
+	width:1210px;
+	height:480px;
+	background:#339;}
+#two3{
+	margin-top:60px;
+	width:1210px;
+	height:280px;
+	background:#9F9;}
+#footer{
+	margin-top:25px;
+	width:1340px;
+	height:370px;
+	background:#9F9;}
+#f_top{
+	width:1340px;
+	height:95px;
+	background:#3F0;}
+#f_middle{
+	width:1340px;
+	height:200px;
+	background:#F99;}
+#f_buttom{
+	width:1340px;
+	height:75px;
+	background:#9F3;}
