@@ -1,0 +1,114 @@
+/*首页中的样式*/
+a,a:hover{
+    color: #555555;
+    text-decoration: none;
+}
+/*第一部分 -头部*/
+.header{
+    height: 254px;
+    position: relative;
+    background: url("../images/bg1.jpg") no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover;
+    -webkit-background-origin:border-box;
+    background-origin:border-box;
+}
+/*第一行*/
+.header > .row-one{
+    margin: 12px -15px;
+}
+.header > .row-one .label{
+    background: #3d3d3d;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top:10px;
+    display: inline-block;
+}
+.header > .row-one .options{
+    text-align: center;
+}
+.header > .row-one .options > ul{
+    margin-left: 10px;
+}
+/*第二行*/
+.header > .row-two{
+    color: #ffffff;
+    text-align: center;
+}
+.header > .row-two > h1{
+    margin-top: 0;
+}
+.header > .row-two > h3{
+    font-weight: 200;
+}
+/*第三行*/
+.header > .row-three{
+    position: absolute;
+    bottom: 12px;
+}
+/**第二部分*/
+.buys{
+    margin: 0;
+    height: 120px;
+    border-bottom: 1px solid #c5c5c5;
+}
+.buys ul{
+    width: 51px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+.buys ul > li:last-child{
+    margin-top: 8px;
+}
+/**第三部分轮播*/
+.carousels{
+    padding: 14px 0 10px;
+    background: #f4f4f4;
+    border:1px solid #c5c5c5;
+}
+.carousels .item > img{
+    width: 100%;
+}
+/*圆圈样式*/
+.carousel-indicators li{
+    border-color: grey;
+}
+/*第四部分- 热门房源*/
+.hot-rooms > .hot-header{
+    height: 48px;
+    line-height: 48px;
+    padding-left: 15px;
+    border-bottom: 1px solid #c5c5c5;
+}
+.hot-rooms > .hot-list > .media{
+    padding: 14px 11px;
+    border-bottom: 1px solid #c5c5c5;
+}
+.hot-rooms > .hot-list .media-heading{
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.hot-rooms > .hot-list .media-body > p{
+    margin: 0;
+    font-size: 12px;
+}
+.hot-rooms > .hot-list .media-body .label{
+    display: inline-block;
+    margin-top: 4px;
+}
+.row-four{
+    padding: 6px;
+    color: #fff;
+    font-weight: bold;
+    height: 60px;
+    background: rgba(46,40,35,0.7);
+}
+.row-four span{
+    display: inline-block;
+    width: 70px;
+    height:35px;
+    background: #00ae66;
+    border-radius: 5px;
+    line-height:35px;
+    text-align: center;
+}

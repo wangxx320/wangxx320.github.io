@@ -1,0 +1,23 @@
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+	font-family:"微软雅黑";}
+body{
+	background:#FFDCA9;}
+ul{
+	list-style-type:none;}
+ul li{
+	border-bottom:1px solid #EBB683;
+	height:35px;
+	line-height:35px;}
+a{
+	display:block;
+	font-size:12px;
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;}
+img{
+	margin-left:20px;
+	margin-right:10px;
+	margin-bottom:-3px;}

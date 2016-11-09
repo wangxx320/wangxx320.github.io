@@ -1,0 +1,213 @@
+<script type="text/javascript">
+$(function(){
+  //动态添加节点
+  $(".chose").each(function(index, element) {
+        var td = $(this).parent().prev();
+    console.log(td.html());
+    switch(td.html()){
+      case "题型": loadData("type.json",$(this));
+      break;
+      case "方向": loadData("department.json",$(this));
+      break;
+      case "知识点": loadData("topjsonics.",$(this));
+      break;
+      case "难度": loadData("level.json",$(this));
+      break;
+    }
+    });
+  
+  
+  
+  function loadData(url,$element){
+    url = "data/"+url;
+    $.post(url,function(data){
+      $(data).each(function(index, element) {
+        var a = $("<a>");
+        a.html(element.relname);
+        $element.append(a);
+        
+      });
+      
+      $(".chose").children().on("click",function(){
+        $(this).siblings().removeClass("active3");
+        $(this).addClass("active3");
+        
+        //得到查询模板
+        var searchObj = {};
+        //var html = $(this).html();
+        //console.log(html);
+        $(".chose").each(function(index, element) {
+                    var el = $(this).children(".active3");
+          var val = el.html();
+          var html = $(this).parent().prev().html();
+          switch(html){
+            case "题型":  searchObj["type"] = val=="单选题"?"radio":(val=="多选题"?"checkbox":(val=="问答题"?"chapter":"全部"));
+            break;
+            case "方向":searchObj["department"] = val;
+            break;
+            case "知识点":searchObj["topics"] = val;
+            break;
+            case "难度":  searchObj["level"] = val=="容易"?"easy":(val=="中等"?"medium":(val=="难"?"difficult":"全部"));
+            break;
+          }
+                });
+        console.log(searchObj);
+        
+        //筛选查询
+        $.ajax({
+          url:"data/question.json",
+          dataType:"json",
+          success: function(data){
+            for(var key in searchObj){
+              
+              if(!(searchObj[key]=="全部")){
+                
+                data = data.filter(function(item){
+                  return item[key] == searchObj[key];
+                });
+              }   
+            }
+            console.log(data);
+            //元素清空
+            $(".Catalogtitwo").each(function(index, element) {
+              $(".Catalogtitwo").eq(index).html("");
+              $(".Catalogcontentup").eq(index).html(""); 
+            });
+            
+            //数据的显示
+            data.forEach(function(item,index){
+            var sttr = "";
+            for(var key in item){
+              switch(key){
+                case "id":sttr+="题号："+item[key];break;
+                case "type":sttr+="&nbsp;&nbsp;题型："+(item[key] =="radio"?"单选题":(item[key]=="checkbox"?"多选题":(item[key]=="chapter"?"问答题":"")));break;
+                case "level":sttr+="&nbsp;&nbsp;难度："+(item[key]=="easy"?"容易":(item[key]=="medium"?"中等":(item[key]=="difficult"?"难":"")));break;
+                case "user":sttr+="&nbsp;&nbsp;上传人："+item[key];break;
+                case "source":sttr+="&nbsp;&nbsp;来源："+item[key];break;
+                case "uploadTime":sttr+="&nbsp;&nbsp;上传时间："+item[key];break;
+                case "times":sttr+="&nbsp;&nbsp;组卷次数："+item[key];break;
+              }
+            }
+            /*var str = "题号："+item.id+"&nbsp;&nbsp;题型："+item.type+"&nbsp;&nbsp;难度："+item.level+"&nbsp;&nbsp;上传人："+item.user+"&nbsp;&nbsp;来源："+item.source+"&nbsp;&nbsp;上传时间："+item.uploadTime+"&nbsp;&nbsp;组卷次数："+item.times;*/
+            $(".Catalogtitwo").eq(index).html(sttr);  
+            for(var key in item){
+              var p = $("<p>");
+              switch(key){
+                case "stem":p.html(item[key]);break;
+                case "analysis":p.attr("analysis");p.html(item[key]);break;
+              }
+            
+            $(".Catalogcontentup").eq(index).append(p); 
+                 
+            }
+            
+            }); 
+            $("p[name='analysis']").hide();
+            $(".Catalogtitle").children("input").on("change",function(){
+              console.log($(this).prop("checked"));
+              if($(this).prop("checked")){
+                $("p[name='analysis']").show();
+              }else{
+                $("p[name='analysis']").hide();
+            }
+          }); 
+          } 
+        });
+        
+        
+      });
+      var kk = $(".chose").eq(0).children().eq(0)
+      kk.trigger("click");
+    })
+  }
+  
+
+});
+</script>
+        <!--题干列表-->
+                <div class="editingarea">
+                    <div class="c_flex"><span class="c_flexible"></span></div>
+                  <div class="c_editview">
+                   <div class="c_condition">
+                       <span><select><option>题干</option></select></span>
+                       <span class="pl5 " ><input type="text"></span>
+                       <span class="pl15 pr15 btn_gray ">查找</span>
+                       
+                    </div>
+                    <div class="divtable">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tablea">
+                          <tr>
+                                <td align="center">题型</td>
+                                <td align="left">
+                                    <div class="chose">
+                                      <a href="#" class="active3">全部</a>
+                                        
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td align="center">方向</td>
+                                <td align="left">
+                                    <div class="chose">
+                                      <a href="#" class="active3">全部</a>
+                                       
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td align="center">知识点</td>
+                                <td align="left">
+                                    <div class="chose">
+                                      <a href="#" class="active3">全部</a>
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">难度</td>
+                                <td align="left">
+                                    <div class="chose">
+                                      <a href="#" class="active3">全部</a>
+                                        
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                       <div class="Catalog">
+                           
+                           <div class="Catalog_right">
+                               <div class="Catalogtitle">
+                                总计<em>15552</em>道题&nbsp;&nbsp;
+                                <input type="checkbox" />
+                                <b>显示答案和解析</b>&nbsp;&nbsp;
+                                
+                                <!--
+                                   <div>
+                                       <i>1</i>
+                                       <a href="#" class="pageone">前</a>
+                                       <a href="#" class="pagetwo">后</a>
+                                   </div>
+                               -->
+                               </div>
+                               <div class="Catalog_rightnei">
+                                    <div class="Catalogtitwo"></div>
+                                    <div class="Catalogcontent">
+                                        <div class="Catalogcontentup"></div>
+                                        
+                                    </div>
+                               </div>
+                               <div class="Catalog_rightnei">
+                                    <div class="Catalogtitwo"></div>
+                                    <div class="Catalogcontent">
+                                        <div class="Catalogcontentup"></div>
+                                      
+                                    </div>
+                               </div>
+                           </div>
+                           <div class="clear"></div>
+                       </div>
+                    </div>
+                </div>

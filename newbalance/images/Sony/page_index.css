@@ -1,0 +1,37 @@
+﻿@charset "utf-8";
+.pd_l_n                        {padding-left: 15px;}
+.index_media                {padding:40px 0 12px;}
+.index_media a                {color: #595959;}
+.date_bg                    {background: #d0d1d3; color:#f0f1f2; padding: 0 5px; line-height: 18px; font-size: 9px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .date_bg { font-size:9px}
+}
+.index_media .dis            {padding-top: 5px; padding-right: 27px;}
+.list_media li                {margin-bottom: 8px;margin-left:4px;}
+.list_img                    {margin-left: -4px; float: left;}
+.list_img li                {float: left; display:inline; margin-left: 8px;}
+.index_friend_link .list_img li a                {height: 114px; float: left; overflow: hidden; position:relative;}
+.index_friend_link .list_img li a img            {display: block;}
+.index_friend_link .list_img li a:hover img       {margin-top: -114px;}
+.index_friend_link .list_img.lala li a img {display:block;width:152px;height:114px;}
+.index_friend_link .list_img.lala li a:hover img       {margin-top: 0px;}
+.index_friend_link .list_img.lala li a                {height: 114px; float: left; overflow: hidden; position:relative;}
+
+
+
+
+
+#newsListButton                {background: url("/images/tit_news_center.gif") no-repeat transparent 0 -12px center;display: block; height: 40px; overflow: hidden; text-indent: -1000px; width: 90px; margin-left: 7px; margin-top: 0px;}
+#newsListButton:hover        {background-position: 0px -40px;}
+#newsListButton2{background:url("/images/more_button_pic.gif") no-repeat transparent top;display:block;height:40px;width:70px;overflow:hidden;text-indent: -1000px;margin-left:7px;margin-top:0px}
+#newsListButton2:hover        {background-position: 0px -40px; }
+.w1200 p.content{width:425px}
+
+
+/*20140504*/
+#sonyBoxHeader { padding-top: 16px;}/*20140504*/
+#sonyBoxTitle { position: relative; padding-bottom: 21px; z-index: 1}/*20140504*/
+#sonyBoxTitle h1 { margin-right: 235px; width: 720px; white-space: nowrap; text-overflow: ellipsis; height: 30px; line-height: 30px; padding-top: 5px; float: none;}/*20140504*/
+#sonyBoxTitle .share_button {bottom: 21px; right: 13px;}/*20140504*/
+#sonyBoxHeader #sonyBoxClose{right: 13px;}/*20140504*/
+#sonyBoxDateBlock { margin-bottom: 0px;}/*20140504*/

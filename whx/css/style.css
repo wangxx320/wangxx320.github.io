@@ -1,0 +1,137 @@
+a,a:hover{
+    color: #000;
+}
+/*第一行登录注册按钮和中间内容向下对齐*/
+.row-one .btns-control{
+    height: 40px;
+    padding-top: 10px;
+}
+
+.row-one .tabs .tabs-item{
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+/*为选中的元素添加颜色*/
+.row-one .tabs .tabs-item.active a{
+    color: #cf0006;
+}
+
+/*第二行*/
+.row-two{
+    height: 2px;
+    background: #d2d2d2;
+    margin: 2px 0;
+}
+
+.row-two .tabs .tabs-item.active{
+    height: 2px;
+    background: #cf0006;
+}
+.row-two .tabs .tabs-item:visited{
+    height: 2px;
+    background: #cf0006;
+}
+
+/*第三行,第四行极小屏下的*/
+.row-three,.row-four .tab-content{
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+    margin-top: 4px;
+    background: #f2f2f2;
+}
+.row-four{
+    margin-top: 4px;
+}
+.row-four .tab-content{
+    margin-top: -1px;
+    background: none;
+}
+
+
+/*第二部分*/
+.search{
+    margin:4px 0px;
+}
+.search .label-bar{
+    height: 20px;
+    border-bottom: 1px solid #d2d2d2;
+    background: #f2f2f2;
+    margin-top: 10px;
+}
+
+.search .labels a{
+    margin-right: 10px;
+}
+
+.search-content .search_top{
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+    border-bottom: none;
+    margin-top: 10px;
+}
+
+.search-content .search_content{
+    border: 1px solid #d2d2d2;
+    margin-bottom: 10px;
+}
+.search-content .search_content ul li{
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+}
+.search-content .search_content ul{
+    margin: 10px;
+    border-bottom: 1px dashed #d2d2d2;
+}
+.search-content .search_content ul.last{
+    border-bottom: none;
+}
+.search-content .search_content ul li.last{
+    width: 55px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #d2d2d2;
+}
+
+.table-divider{
+    height: 4px;
+    background: #fa5734;
+    margin: 10px 0;
+}
+
+/*表格表头居中*/
+table th{
+    text-align: center;
+}
+
+/*分页*/
+.row-five .span{
+    display: inline-block;
+    width:25px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid lightskyblue  ;
+    margin-bottom: 10px;
+}
+/*底部*/
+.row-six{
+    height:50px;
+    line-height: 50px;
+    background:#ac0202;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0;
+}
+/*筛选按钮*/
+.row-seven{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+}
