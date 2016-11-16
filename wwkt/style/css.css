@@ -1,0 +1,315 @@
+/* CSS Document */
+*{
+	margin:0 auto;
+	padding:0 sauto;}
+body{
+	font-family:"隶书";}
+#top{
+	width:1200px;
+	height:72px;
+	background:url(../images/top.jpg) no-repeat;
+	background-size:100% 100%;}
+#d1{
+	font-size:16px;
+	color:#353432;
+	margin-left:535px;
+	line-height:72px;
+	float:left;}
+#d2{
+	float:right;
+	margin-right:290px;
+	margin-top:12px;}
+.clear{
+	clear:both;}
+#s1{
+	font-size:14px;
+	color:#040404;}
+#s2{
+	font-size:12px;
+	color:#cd6562;}
+#caidan{
+	width:1200px;
+	height:20px;
+	background:#8d7d77;}
+#sousuo{
+	width:1200px;
+	height:20px;
+	background:#e8e3db;}
+#l1{
+	margin-left:250px;
+	list-style-type:none;}
+#l1 li{
+	display:inline;}
+#l1 li a{
+	font-size:12px;
+	color:#FFF;
+	text-decoration:none;
+	margin:0 5px 0 5px;
+	line-height:20px;}
+#li{
+	background:#bb0000;}/*用padding 撑开将首页的背景填充*/
+.sup1{
+	color:#FFF;
+	background:#F00;}
+#l2{
+	padding-left:0px;
+	list-style-type:none;}
+#l2 li{
+	display:inline;}
+#l2 li a{
+	color:#8d7d77;
+	font-size:9px;
+	text-decoration:none;
+	line-height:20px;}
+#d3{
+	line-height:20px;
+	color:#8d7d77;
+	font-size:10px;
+	font-family:"宋体";
+	float:left;
+	margin-left:295px;}
+#d4,#d5{
+	font-size:10px;
+	font-family:"宋体";
+	float:left;
+	margin-left:35px;}
+#t1{
+	margin-top:3px;
+	float:left;
+	width:70px;
+	height:10px;
+	border:1px solid #8d7d77;}
+#t2{
+	margin-top:3px;
+	border:none;
+	float:left;
+	width:30px;
+	height:14px;
+	font-size:10px;
+	color:#FFF;
+	background:#8d7d77;}
+#body{
+	background:url(../images/beijing.jpg);
+	background-repeat:repeat-y;
+	background-size:1200px 720px;
+	width:1200px;
+	height:3100px;}
+#head{
+	width:1200px;
+	height:300px;
+	background:url(../images/head.jpg);
+	background-size:100% 100%;}
+#s3{
+	font-size:13px;
+	color:#cb346c;}
+#s4{
+	font-size:13px;
+	color:#8d7d77;}
+#s5{
+	font-family:"华文仿宋";
+	font-weight:bold;
+	font-size:28px;
+	color:#cb346c;}
+#sup2{
+	color:#FFF;
+	background:#cb346c;}
+#s6{
+	font-size:11px;
+	color:#8d7d77;}
+#d6{
+	margin-left:610px;
+	padding-top:120px;}
+#middle{
+	width:600px;
+	overflow: hidden;}
+#one{
+	text-align:center;
+	width:600px;
+	height:80px;
+	margin-top:5px;}
+#two{
+	width:586px;
+	height:290px;
+	background:url(../images/qiannianbaoguan.jpg);
+	background-size:100% 100%;}
+#v1{
+	float:left;
+	margin-left:20px;
+	margin-top:30px;}
+#v2{
+	margin-top:30px;
+	float:right;
+	margin-right:55px;}
+h2{
+	color:#351405;}
+p{
+	font-size:12px;
+	color:#9c8478;}
+#three{
+	border:1px solid #9c8478;
+	width:580px;
+	height:435px;
+	background:url(../images/xinpin%20.jpg);
+	background-size:100% 100%;
+	margin-top:5px;
+	position:relative;}
+#v3,#v4,#v5,#v6{
+	width:195px;
+	height:195px;
+	border:1px solid #9c8478;}
+#v3{
+	margin-top:15px;
+	margin-left:20px;
+	float:left;}
+#v4{
+	margin-top:15px;
+	margin-right:155px;
+	float:right;}
+#v5{
+	margin-top:10px;
+	margin-left:20px;
+	float:left;}
+#v6{
+	margin-top:10px;
+	margin-right:155px;
+	float:right;}
+.s1{
+	color:#351405;
+	font-size:12px;}
+.s2{
+	color:#351405;
+	font-size:14px;}
+#four{
+	border:1px solid #9c8478;
+	width:580px;
+	height:215px;
+	background:url(../images/taohua.jpg);
+	background-size:100% 100%;
+	margin-top:5px;}
+#five{
+	border:1px solid #9c8478;
+	margin-top:5px;
+	width:580px;
+	height:605px;
+	background:url(../images/remen.jpg);
+	background-size:100% 100%;}
+#five div{
+	width:190px;
+	height:190px;
+	border:1px solid #9c8478;
+	float: right;
+	margin-top: 7px;
+	margin-right: 10px;}
+
+.s3{
+	color:#F00;}
+#six{
+	border:1px solid #9c8478;
+	margin-top:5px;
+	width:580px;
+	height:215px;
+	background:url(../images/yuelao.jpg);
+	background-size:100% 100%;}
+#seven{
+	border:1px solid #9c8478;
+	margin-top:5px;
+	width:580px;
+	height:555px;
+	background:url(../images/diancang.jpg);
+	background-size:100% 100%;
+	position:relative;
+}
+#n1,#n2,#n3,#n4,#n5,#n6,#n7,#n8,#n9{
+	width:140;
+	height:165px;
+	border:1px solid #9c8478;
+	float:left;
+	margin-top:12px;
+	margin-left:10px;}
+
+#eight{
+	border:1px solid #9c8478;
+	margin-top:5px;
+	width:580px;
+	height:215px;
+	background:url(../images/citang.jpg);
+	background-size:100% 100%;}
+/*第九部分*/
+#nine{
+	margin-top:5px;
+	width:586px;
+	background:url(../images/fenlei.jpg);
+	background-size:100% 100%;
+	overflow: hidden;}
+#nine .u3,#nine .u4{
+	list-style-type:none;}
+#nine .u3 li,#nine .u4 li{
+	display:inline-block;}
+#nine .u3 li a,#nine .u4 li a{
+	margin-left:-10px;
+	color:#9c8478;
+	font-size:10px;
+	text-decoration:none;}
+#nine #main2 .u4 li{
+	line-height: 20px;
+	width: 45px;
+}
+
+/*分类\服务*/
+#fenlei,#fuwu{
+	margin-left:15px;
+	overflow: hidden;}
+/*分类内容*/
+#main1,#main2{
+	margin-left:30px;
+	margin-top:10px;}
+#f,#w{
+	float:left;
+	margin:10px 0;
+	width:26px;
+	height:75px;
+	background:#9c8478;
+	color:#FFF;
+	font-size:14px;
+	text-align:center;
+	border:1px solid #9c8478;}
+.p{
+	margin-left:-33px;
+	color:#9c8478;
+	font-weight:bold;
+	font-family:"宋体";
+	font-size:11px;}
+#ten{
+	border:1px solid #9c8478;
+	margin-top:5px;
+	width:580px;
+	height:215px;
+	background:url(../images/jing.jpg);
+	background-size:100% 100%;}
+.tong{
+	line-height:12px;
+	color:351405;
+	font-size:11px;
+	width:8px;
+	margin-left:10px;
+	float:right;}
+#e{
+	position:absolute;
+	top:180px;
+	right:40px;}
+#a{
+	margin-top:30px;
+	margin-right:280px;}
+#b{
+	margin-top:40px;
+	margin-right:160px;}
+#c{
+	position:absolute;
+	right:40px;
+	top:180px;}
+#d{
+	margin-top:10px;
+	margin-right:160px;}
+#g{
+	margin-top:20px;
+	margin-right:160px;}
