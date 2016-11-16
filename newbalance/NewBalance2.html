@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>新百伦</title>
+<style type="text/css">
+	ul,body{
+		margin:0px;
+		padding:0px;}
+	a{ text-decoration:none;}
+	/*顶部*/
+	.header{
+		background-color:#000000;
+		overflow:hidden;/*清除子级浮动*/
+	}
+	.header .logo{
+		width:150px;
+		height:55px;
+		/* background-color:#df1e3b; */
+		background-image:url(images/Newbalance/logo.png);
+		background-repeat:no-repeat;
+		background-position:center;
+		float:left;
+	}
+	.header .nav{
+		width:450px;
+		float:left;
+	}
+	.header .nav ul li{
+		list-style:none;
+		float:left;
+		height:55px;
+		line-height:55px;
+		margin:0 25px;
+	}
+	.header .nav ul li.shoes{
+		width:40px;
+		margin-right:-20px;
+		background-repeat:no-repeat;
+		background-image:url(images/Newbalance/ss.png);
+		background-position:center;
+	}
+	.header .nav ul li a{
+		color:#FFFFFF;
+	}
+	.header .search{
+		width:360px;
+		height:55px;
+		/* background-color:#FFFFFF; */
+		background:url(images/Newbalance/search.png) no-repeat center;
+		float:right;
+	}
+	.search input{
+		height:30px;
+		margin:10px 30px;
+		border:0px;
+		background-color:#e7e7e7;
+	}
+	.header .location{
+		width:100px;
+		height:55px;
+		float:right;
+		color:#FFFFFF;
+		line-height:55px;
+	}
+	/*广告*/
+	.ad{
+		height:475px;
+		/*background-color:#ededed;*/
+		background:url(images/Newbalance/ad.png) no-repeat center;
+		background-color:#ededed;
+		
+		
+	}
+	/*关注*/
+	.focus{
+		background-color:#FFFFFF;
+	}
+	.focus div{/*居中容器*/
+		width:1070px;
+		height:50px;
+		margin:0 auto;
+		text-align:center;
+		line-height:50px;
+	}
+	/*产品列表*/
+	.products{
+		background-color:#ededed;
+	}
+	.products div{/*居中容器*/
+		width:1070px;
+		margin:0 auto;
+		overflow:hidden;
+	}
+	.products div .product{
+		width:520px;
+		height:290px;
+		float:left;
+		margin-right:30px;
+		margin-bottom:30px;
+	}
+	.products div .right{
+		margin-right:0px;
+	}
+	.products div .last{
+		width:1070px;
+		height:290px;
+		background:url(images/Newbalance/p7.png) no-repeat center;
+		clear:both;/*清除浮动，用在布局最后一个元素*/
+	}
+	#p1{
+		background:url(images/Newbalance/p1.gif) no-repeat center;
+	}
+	#p2{
+		background:url(images/Newbalance/p2.gif) no-repeat center;
+	}
+	#p3{
+		background:url(images/Newbalance/p3.gif) no-repeat center;
+	}
+	#p4{
+		background:url(images/Newbalance/p4.gif) no-repeat center;
+	}
+	#p5{
+		background:url(images/Newbalance/p5.gif) no-repeat center;
+	}
+	#p6{
+		background:url(images/Newbalance/p6.gif) no-repeat center;
+	}
+	
+	.info{
+		height:220px;
+		background-color:#FFFFFF;
+		border-bottom:1px solid #545454;
+	}
+	.footer{
+		height:48px;
+		background-color:#FFFFFF;
+	}
+	
+</style>
+</head>
+
+<body>
+	<div class="header">
+		<div class="logo"></div>
+		<div class="nav">
+			<ul>
+				<li><a href="#">男</a></li>
+				<li><a href="#">女</a></li>
+				<li><a href="#">儿童</a></li>
+				<li class="shoes"></li>
+				<li><a href="#">跑鞋顾问</a></li>
+			</ul>
+		</div>
+		<div class="location">查找门店</div>
+		<div class="search">
+			<input type="text"/>
+		</div>
+	</div>
+	<div class="ad"></div>
+	<div class="focus">
+		<div><!--居中-->
+			关注NewBalance中国 WEIBO WEIXIN
+		</div>
+	</div>
+  	<div class="products">
+		<div><!--居中-->
+			<div id="p1" class="product"></div>
+			<div id="p2" class="product right"></div>
+			<div id="p3" class="product"></div>
+			<div id="p4" class="product right"></div>
+			<div id="p5" class="product"></div>
+			<div id="p6" class="product right"></div>
+			<div class="last"></div>
+		</div>
+	</div>
+	<div class="info"></div>
+	<div class="footer"></div>
+</body>
+</html>

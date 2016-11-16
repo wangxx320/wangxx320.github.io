@@ -1,0 +1,445 @@
+﻿
+
+
+
+/*******************************************************
+*************** HEADER STYLE BEGIN *********************
+*******************************************************/ 
+#header                         {height: 105px; background-color: #000; width: 100%;}
+.w960 #header                           {width: 960px;}
+#header-main            {height: 105px; width:960px; margin: 0px auto; position: relative;z-index:100;}
+#header-userInfo        {float: right;margin-right: 17px;}
+#sonyLogo                       {overflow: hidden; display: inline;}
+#sonyLogo a                     {float: left; width:100px; height: 57px; text-indent: -1000px; background: url(/images/sonyLogo20131220.jpg) no-repeat 0 center; margin-left: 16px;}
+/*HEADER NAV BEGIN*/
+#headerNav                                              {width: 100%; height: 48px;}
+#headerNav li,#headerNav a.menu               {float: left; height: 48px;position: relative;z-index:100}
+#headerNav a.menu                                     {background-image: url(/images/sony_nav.gif); background-repeat: no-repeat; overflow: hidden; text-indent: -1000px;}
+#headerNav li .subMenuBlock     {position: absolute; display: none; width: 960px; background: #fff; top: 48px; left: 0px; z-index: 100;}                  
+#headerNav li.hover .subMenuBlock       {display: block;}
+#headerNav li .subMenuBlock                     {-webkit-box-shadow:0px 1px 10px #555; -moz-box-shadow:0px 1px 10px #555; box-shadow:0px 1px 10px #555;}
+#headerNav01.hover a.menu{background-position: 0px -48px}
+#headerNav01 a.menu                                 {width: 103px; background-position: 0px 0px;}
+#headerNav02 a.menu                                 {width: 110px; background-position: -103px 0px;}
+#headerNav03 a.menu                                  {width: 124px; background-position: -213px 0px;}
+#headerNav04 a.menu                                  {width: 96px; background-position: -337px 0px;}
+#headerNav05 a.menu                                  {width: 95px; background-position: -433px 0px;}
+#headerNav06 a.menu                                  {width: 90px; background-position: -528px 0px;}
+#headerNav01 a:hover,#headerNav01 a.active        {background-position: 0px -48px;}
+#headerNav02 a:hover,#headerNav02 a.active        {background-position: -103px -48px;}
+#headerNav03 a:hover,#headerNav03 a.active        {background-position: -213px -48px;}
+#headerNav04 a:hover,#headerNav04 a.active        {background-position: -337px -48px;}
+#headerNav05 a:hover,#headerNav05 a.active        {background-position: -433px -48px;}
+#headerNav06 a:hover,#headerNav06 a.active        {background-position: -528px -48px;}
+#headerNav li .subMenuContentLeft                {float: left; width: 640px;}
+#headerNav li .subMenuContentRight                {float: left; width: 320px;}
+#headerNav li .subMenuBlock .subHeader            {height: 60px;}
+#headerNav li .subMenuBlock .subMenuContentLeft .subHeader            {background: #f0f1f2;}
+#headerNav li .subMenuBlock .subMenuContentRight .subHeader            {background: #e6e6e8;}
+#headerNav li .subMenuBlock .subMenuContentLeft .subTitle            {margin-top: 25px; margin-left: 14px; float: left;}
+#headerNav li .subMenuBlock .subMenuContentRight .subTitle            {margin-top: 25px; margin-left: 19px; float: left;}
+#headerNav li .subMenuBlock .subMenuList        {}
+#headerNav li .subMenuBlock .subList            {float: left; width: 160px;}
+#headerNav li .subMenuBlock .subList dl            {padding-left: 14px; margin-top: 29px;}
+#headerNav li .subMenuBlock .subList dt            {margin: 0px 0px 5px; padding-left: 10px;}
+#headerNav li .subMenuBlock .subList dd            {padding: 0px 0px; line-height: 22px; display: block;}
+#headerNav li .subMenuBlock .subList dd    a        {display: block; font-size: 12px; line-height: 22px; color: #949494; padding-left: 10px; background: url(/images/navMenuIcon.gif) 0px 8px no-repeat #ffffff;font-family:"Microsoft YaHei",Arial}
+#headerNav li .subMenuBlock .subList dd    a:hover    {background: #fff url(/images/navMenuIcon.gif) 0px -88px no-repeat; color: #50BCFD;}
+
+
+#headerNav li .subMenuBlock .subList dl.subListLink2            { margin-top: 0px;}
+#headerNav li .subMenuBlock .subList dl.subListLink2 .absolute    {top: 16px;}
+#headerNav li .subMenuBlock .subList dl.subListLink2 .absolute .xiaofei{background:url(/images/top_xiaofei_pic.gif) no-repeat;height:11px;width:130px;text-indent:-1000px;display:block;margin-top:10px;margin-left:-2px;line-height:11px;overflow:hidden;}
+#headerNav li .subMenuBlock .subList dl.subListLink2 .absolute .xiaofei:hover{background-position:0 -11px;}
+#headerNav li .subMenuBlock .subList dl.subListLink2 a            {color: #000;}
+#headerNav li .subMenuBlock .subList dl.subListLink2 a:hover    {color: #33b2fc;}
+#headerNav01 #gotoStoreButton                {width: 139px; height: 60px; overflow: hidden; background-image: url(/images/gotoStoreButton.gif); background-position: 0px 0px; background-repeat: no-repeat; text-indent: -1000px; float: right; margin-right: 20px;}
+#headerNav01 #gotoStoreButton:hover            {background-position: 0px -60px;}
+#headerNav01 #gotoSystemButton                {width: 106px; height: 60px; overflow: hidden; background-image: url(/images/gotoSystemButton.gif); background-position: 0px 0px; background-repeat: no-repeat; text-indent: -1000px; float: right; margin-right: 20px;}
+#headerNav01 #gotoSystemButton:hover        {background-position: 0px -60px;}
+.subMenuFooter                {height: 36px; padding-top: 28px; padding-left: 24px;}
+
+
+ /*HEADER SEARCH BEGIN*/
+#headerSearch                                   {position: absolute; top: 58px; right: 13px;}
+#search-input                    {border-width: 2px 0px 2px 2px; border-style: solid; border-color: #424242; height: 16px; width: 138px; float: left; background-color:black;color:#595959;padding:10px;font-family:arial;font-size:14px;}
+#btn-go                            {border-width: 2px 0px; border-style: solid; border-color: #424242; width: 40px; background: #424243 url(/images/searchBg.gif) center right no-repeat; height: 26px; text-indent: -1000px; overflow: hidden; float: left; padding: 5px 0px;}
+#header-userInfo a                {diplay: block; float:left; margin-top:10px; overflow: hidden; text-indent: -1000px;}
+#sonyGroup                        {width:112px; height:24px; background: url("/images/sonychina_20131220_pic3.jpg") no-repeat; margin-right:9px;}
+#sonyGroup:hover                  {background-position: 0 -24px;}
+#sonyGlobeHome                    {width:84px; height:24px; background: url("/images/sonychina_20131220_pic2.jpg") no-repeat; margin-right:28px;}
+#sonyGlobeHome:hover             {background-position: 0 -24px;}
+#header-userInfo #sonyChinaButton                {width: 48px; height: 24px; background-image: url(/images/sonychina_20131220_pic1.jpg); background-repeat: no-repeat; cursor:default;}
+/******************************************************************************
+***************** KV and NewRecommendBanner STYLE BEGIN ***********************
+******************************************************************************/
+ 
+#kv                            {width: 960px; margin: 0px auto; height: 520px; position: relative; z-index: 70;}
+.w1200 #kv                    {width: 960px; margin: 0px auto;}
+.w960 #kv                                       {overflow: hidden;}
+#kv img.Kvimg1                        {position: absolute; top: 0px; left: -120px;z-index:98;}
+#kv img.Kvimg2                    {position: absolute; top: 50%; left: 50%;z-index:99;display:none}
+#kv .link                    {position: absolute; bottom: 273px; left: 7px;display:none}
+
+#NewRecommendBanner                     {overflow: hidden; width:100%; position: relative; margin-top: 42px;}
+.w960 #NewRecommendBanner       {width: 960px;}
+#NewRecommendTitle                      {width: 940px; margin: 0px auto 20px; padding: 0px 10px; position: relative;}   
+#NewRecommendTitle h2           {margin-bottom: 0px;}   
+#NewRecommendPage                       {font-size: 0px; position: absolute; right: 8px; top: -2px;}
+#NewRecommendPage span                     {width: 28px; height: 28px; background-image: url(/images/page.jpg); background-repeat: no-repeat; background-position: -28px 0px;cursor: pointer;}
+#NewRecommendPage span:hover       {background-position: -57px 0px;}
+#NewRecommendPage span.active      {background-position: 0px 0px;}
+#NewRecommendBannerList                                                         {width:100%;}
+#NewRecommendBannerArea                                                         {width:960px; margin: 0px auto; position: relative; height: 272px;}
+#NewRecommendBannerArea ul                                                      {position: absolute; width: 2880px; top: 0px; left: 0px; height: 272px;z-index:50;}
+#NewRecommendBannerArea li                                                      {float: left; width: 232px; margin-right: 4px; display: inline;margin-left:4px}
+#NewRecommendBannerArea a                            {color: #595959; font-size: 14px; line-height: 18px; text-decoration: none;}
+#NewRecommendBannerArea a:hover                        {color: #595959;}
+#NewRecommendBannerArea a .newRecommendDetail        {background-color: #eff0f1; height: 100px; font-size: 14px; font-weight: inherit; position: relative;}
+#NewRecommendBannerArea a:hover .newRecommendDetail    {background-color: #eff0f1;}
+#NewRecommendBannerArea p                                                       {padding: 14px 40px 15px 15px;line-height:20px}
+#NewRecommendBannerArea a del                                           {width: 15px; height: 15px; display: block; position: absolute; top: 15px; right: 15px; background-image: url(/images/icon_img_jiantou.gif); background-repeat: no-repeat; background-position: 0px -21px;overflow:hidden}
+#NewRecommendBannerArea a del.gallery                           {background-image: url(/images/icon_img_jiantou.gif); width: 15px; height: 15px; background-position: 0px -18px;}
+#NewRecommendBannerArea a:hover del                                     {background-position: 0px 0px;}
+#NewRecommendBannerArea a:hover *                                       {cursor: pointer;}
+#recommendPageLeft,#recommendPageRight                {position: absolute; height: 50px; width: 50px; display: none; z-index: 52;}
+#recommendPageLeft                                    {background: url(/images/buttonLeft.png) no-repeat; top: 60px; left: -70px;}
+/*#recommendPageLeft:hover                            {background: url(/images/buttonLeftHover.png) no-repeat;}*/
+#recommendPageRight                                    {background: url(/images/buttonRight.png) no-repeat; top: 60px; right: -70px;}
+/*#recommendPageRight:hover                            {background: url(/images/buttonRightHover.png) no-repeat;}*/
+.motionMark                                     {position: absolute; z-index: 51; height: 10000px; background-color: #fff; filter:alpha(opacity=80); -moz-opacity: 0.8; opacity: 0.8; cursor: pointer;}
+.leftMark                    {top: 0px; left: 0px;}
+.rightMark                    {top: 0px; right: 0px;}
+.content                                        {width: 100%;}
+.w1200 .content                         {width: 1200px; margin: 0px auto;}
+.w960 .content                          {width: 960px; margin: 0px auto;}
+/******************************************************************************
+************************** GALLERY STYLE BEGIN ********************************
+******************************************************************************/
+#sonyBoxGallery                    {width: 100%; padding-top: 90px; margin-bottom: 40px;}
+#galleryMain                    {width: 960px; margin: 0px auto; padding: 60px 0px; position: relative;}
+#markBoxGallery{background:url(/images/loading.gif) center center no-repeat; background-color:#F0F1F3;}
+#galleryArea                    {width: 798px; margin: 0px auto; position: relative;}
+#galleryList                    {width: 960px; margin: 0px auto; height: 172px;}
+#galleryListBlock                {position: relative; height: 172px; width: 100%;}
+#galleryMark                    {position: relative; height: 172px; width: 960px; overflow: hidden;}
+#galleryData                    {position: absolute; height: 172px; width:1920px; top: 0px; left: 0px; z-index: 1001;}
+#galleryData li                    {float: left; width: 232px; height: 172px; overflow: hidden; margin-right: 8px; display: inline;}
+#galleryData li a                {width: 232px; height: 172px; display: block; position: relative; overflow: hidden;}
+#galleryData li a p                {position: absolute; width: 182px; bottom: 0px; left: 0px; padding: 14px 30px 16px 20px; background-color: #f0f1f2; color: #333333; display: none; font-size: 14px; line-height: 20px;cursor:pointer}
+#galleryListBlock #scrollPageLeft,
+#galleryListBlock #scrollPageRight            {position: absolute; height: 50px; width: 50px; display: block; z-index: 1007;}
+#galleryListBlock #scrollPageLeft            {background: url(/images/gallerypageleft.png) no-repeat; top: 55px; left: -67px; display: none;}
+#galleryListBlock #scrollPageRight            {background: url(/images/gallerypageright.png) no-repeat; top: 55px; right: -59px;}
+#sonyBoxGalleryFooter            {background-color: #1f2024; width: 100%; z-index: 1005; position: relative;}
+#galleryPage                    {display: none;}
+#galleryListBlock .motionMark    {z-index: 1006; background-color: #1f2024;}
+#middlePicture                    {visibility: hidden; margin: 0px auto; display: none;}
+#sonyBoxGalleryFooter img.block    {margin: 0px auto; width: 798px;}        /*临时使用*/
+#galleryListArea                {width: 100%; overflow: hidden; height: 172px; padding-bottom: 30px; padding-top: 30px; z-index: 1004; position: absolute; left: 0px; bottom: 71px; background-color: #1f2024;}
+#galleryTypeList                {padding: 0px 0px; float: left;}
+#galleryTypeList li                {height: 38px; padding: 16px 0px; float: left;}
+#galleryTypeList li a            {height: 38px; float: left; background-image: url(/images/galleryFooterLink.gif); background-repeat: no-repeat;}
+#galleryTypeList #allPhotoLink        {background-position: 0px -38px; width: 79px;height:38px}
+#galleryTypeList #productPhotoLink    {background-position: -79px -38px; width: 76px;height:38px}
+#galleryTypeList #ActionPhotoLink    {background-position: -155px -38px; width: 82px;height:38px}
+#galleryTypeList #allPhotoLink:hover,
+#galleryTypeList #allPhotoLink.active        {background-position: 0px 0px; width: 79px;}
+#galleryTypeList #productPhotoLink:hover,
+#galleryTypeList #productPhotoLink.active    {background-position: -79px 0px; width: 76px;}
+#galleryTypeList #ActionPhotoLink:hover,
+#galleryTypeList #ActionPhotoLink.active    {background-position: -155px 0px; width: 82px;}
+#galleryTypeList li a:hover,
+#galleryTypeList li a.active    {color: #fff;}
+#galleryListBar                    {z-index: 1005;}
+.galleryPhotoButton                {position: absolute; top: 0px; background-color: transparent; cursor: pointer;}
+.alpha0                            {filter:alpha(opacity=0); -moz-opacity: 0; opacity: 0;}
+#galleryPhotoUp                    {right: 0px; background-image: url(/images/rightGalleryIcon.png); background-repeat: no-repeat;}
+#galleryPhotoDown                {left: 0px; background-image: url(/images/leftGalleryIcon.png); background-repeat: no-repeat;}
+#galleryDownload                {float: right; height: 38px; margin: 16px 0px; background-image: url(/images/galleryDownload.gif); background-repeat: no-repeat; background-position: 0px 0px; width: 173px;}
+#galleryDownload:hover            {background-position: 0px -38px;}
+#galleryKey                                             {position: absolute; width: 80px; height: 40px; top: 15px; display: block; background: url(/images/pressBarDot.gif) no-repeat;}
+
+
+#sonyBoxDateBlock{margin-bottom: 6px;margin-left:3px}
+#sonyBoxDateBlock .date{height: 18px; float: left; line-height: 18px; background-color: #cccccc; color: #fff; font-size: 9px; padding: 0px 4px; margin-right: 5px;}
+#sonyBoxDateBlock a{float: left; margin-right: 5px; height: 18px; overflow: hidden; text-indent: -1000px;}
+
+#technologyNewsLink2{width: 50px; background: url(/images/linkArrBg2.gif) no-repeat 0 -86px;height:18px;}
+#technologyNewsLink2:hover{background-position:0 -107px;}
+#companyNewsLink2{width: 50px; background: url(/images/linkArrBg2.gif) no-repeat 0 0px;height:18px;}
+#companyNewsLink2:hover{background-position:0 -21px;}
+#productNewsLink2{width: 50px; background: url(/images/linkArrBg2.gif) no-repeat 0 -43px;height:18px;}
+#productNewsLink2:hover{background-position:0 -64px;}
+#mediaNewsLink2{width: 70px; background: url(/images/linkArrBg2.gif) no-repeat -55px 0px;}
+#mediaNewsNoLink2{display:none;}
+#mediaNewsLink2:hover{background-position:-55px -21px;}
+
+/******************************************************************************
+************************** LIANZHAI STYLE BEGIN *******************************
+******************************************************************************/
+#sonyBoxSlide                    {width: 100%; margin-top: 20px; overflow: hidden;}
+#slideMain                        {width: 960px; margin: 0px auto; position: relative;}
+#slideList                        {width: 960px; margin: 0px auto; height: 172px;}
+#slideListBlock                    {position: relative; height: 172px; width: 100%;}
+#slideData                        {height: 172px; width:1920px; z-index: 1001; position: absolute; top: 0px; left: 0px;}
+#slideData li                    {float: left; width: 232px; height: 172px; overflow: hidden; margin-right: 8px; display: inline;}
+#slideListBlock #scrollPageLeft,
+#slideListBlock #scrollPageRight            {position: absolute; height: 50px; width: 50px; display: block; z-index: 1007;}
+#slideListBlock #scrollPageLeft                {background: url(/images/buttonLeft.png) no-repeat; top: 55px; left: -70px;}
+#slideListBlock #scrollPageLeft:hover        {background: url(/images/buttonLeftHover.png) no-repeat;}
+#slideListBlock #scrollPageRight            {background: url(/images/buttonRight.png) no-repeat; top: 55px; right: -70px;}
+#slideListBlock #scrollPageRight:hover        {background: url(/images/buttonRightHover.png) no-repeat;}
+#slidePage                    {display: none;}
+#slideListBlock .motionMark    {z-index: 1006;}
+
+/******************************************************************************
+**************************** FOOTER STYLE BEGIN *******************************
+******************************************************************************/
+ 
+
+#footer                                                 {background-color: #1f2024; margin-top: 40px;width: 100%;}
+#footerContent                                  {width: 944px; margin: 0px auto; padding: 26px 8px;}
+.w960 #footer                           {width: 960px;}
+#footerContent .baseline                {vertical-align: baseline;}
+#footerContent #icp                             {color: #3e3f43;margin-left:6px;}
+#footerContent #icp img,
+#footerContent #icp span                {vertical-align: middle; padding-right: 12px;}
+#footerContent #icp a            {color: #3E3F43;text-indent:-1000px;display:inline-block;}
+#footerContent #icp a:hover        {color: #009ffb;}
+ 
+#footerLink                                             {margin-top: 15px;margin-left:6px;}
+#footerLink li                                  {float: left; margin-right: 26px;}
+#footerLink li a                                {color: #8f9092;text-indent:-1000px;display:block;}
+    #footerLink li a:hover                  {color: #009ffb;}
+#footerLink .respon{background:url(/images/footlink_pic_1.gif) no-repeat;width:50px;height:14px;background-position:0 -14px;line-height:14px}
+#footerLink .respon:hover{background-position:0 0}
+#footerLink .quanzhan{background:url(/images/footlink_pic_2.gif) no-repeat;width:48px;height:14px;background-position:0 -14px;line-height:14px}
+#footerLink .quanzhan:hover{background-position:0 0}
+#footerLink .suoyou{background:url(/images/footlink_pic_3.gif) no-repeat;width:89px;height:14px;background-position:0 -14px;line-height:14px}
+#footerLink .suoyou:hover{background-position:0 0}
+#footerContent #icp .banquan{background:url(/images/footlink_pic_6.gif) no-repeat scroll 0 0px transparent;width:193px;height:11px;line-height:11px;display:inline-block;margin-left:9px;_background-position:0 4px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #footerContent #icp .banquan{ margin-top: 0px; }
+}
+#footerContent #icp .jingbei{background:url(/images/footlink_pic_4.gif) no-repeat scroll 0 0px transparent;width:103px;height:11px;line-height:11px;margin-left:15px}
+#footerContent #icp .jingbei:hover{background-position:0 -11px;}
+#footerContent #icp .chengxin{background:url(/images/footlink_pic_5.gif) no-repeat scroll 0 0px transparent;width:61px;height:11px;line-height:11px;margin-left:5px}
+#footerContent #icp .chengxin:hover{background-position:0 -11px;}
+
+/******************************************************************************
+**************************** Sony foot leo ******************************
+******************************************************************************/
+#footer-detail                    {border-bottom:1px solid #333438;}
+#footerDetail                    {width:960px;margin:0 auto;padding:34px 0 43px 0;}
+#footerDetail .title            {font-size:14px;}
+#footerDetail .detail            {padding-top:18px;}
+#footerDetail .detail li        {line-height:24px;}
+#footerDetail .detail li a        {color:white;}
+#footerDetail .detail li a:hover{color:#50BCFD;}
+#footerDetail .online_service    {font-size:14px;padding-top:7px;height:36px;}
+#footerDetail .online_service a    {color:#787878}
+#footerDetail .new_mail            {padding-top:21px;color:white;}
+#footer-mail-input                {background:url(/images/footmailinput.gif) right top no-repeat scroll #1f2024; height:26px; width:210px; border:2px solid #424242; padding: 5px; color: #fff;}
+#footerDetail .follow-us        {color:#8f9092;padding-top:28px;padding-bottom:8px;}
+#footerDetail .weibo            {width:142px;height:40px; display: block; overflow: hidden; background:url(/images/sony_china_weibo.gif) no-repeat;text-indent:-2000px;margin-top:1px}
+#footerDetail .weibo:hover,#footerDetail .weixin:hover{background-position:0 -40px}
+#footerDetail .weixin            {width:142px;height:40px; display: block; overflow: hidden; background:url(/images/sony_china_weixin.gif) no-repeat;text-indent:-2000px;margin-top:5px}
+
+#footerDetail .footerStoreSearch                {padding-right: 23px; background: url(/images/footer_store_search.gif) right 2px no-repeat;display:inline-block}
+#footerDetail .footerStoreSearch:hover  {background: url(/images/footer_store_search_hover.gif) right 2px no-repeat;}
+#footerDetail a                         {color: #fff;}
+#footerDetail a:hover           {color: #50BCFD;}
+#online_service_button{width:77px;height:18px;overflow:hidden;text-indent:-1000px;display:block;background: url(/images/onlineservice_pic.jpg) 0 0 no-repeat;margin-top:5px}
+#online_service_button:hover{background-position:0 -18px;}
+/******************************************************************************
+**************************** SONYBOX STYLE BEGIN ******************************
+******************************************************************************
+ 
+#sonyBoxBg                                              {background: #fff; z-index: 1000; width:100%;}
+#sonyBox                                                {position: absolute; top: 0px; left: 0px; width: 100%; z-index: 1001;}
+#sonyBoxHeader                                  {background: #fff; z-index: 1002; height: 68px; padding-top: 10px; width: 100%;}
+#sonyBoxDes                                             {font-size: 14px; line-height: 20px; height: 20px;}
+#sonyBoxHeader #prevPage,
+#sonyBoxHeader #nextPage                {position: absolute; height: 50px; width: 50px; display: none;}
+#sonyBoxHeader #prevPage                {background: url(/images/buttonLeft.png) no-repeat; top: 0px; left: -70px;}
+#sonyBoxHeader #prevPage:hover  {background: url(/images/buttonLeftHover.png) no-repeat;}
+#sonyBoxHeader #nextPage                {background: url(/images/buttonRight.png) no-repeat; top: 0px; right: -70px;}
+#sonyBoxHeader #nextPage:hover  {background: url(/images/buttonRightHover.png) no-repeat;}
+#sonyBoxHeader #sonyBoxClose    {position: absolute; top: 12px; right: 16px;}
+ 
+#sonyBoxContent                                 {margin: 0px auto; padding-top: 90px; width: 100%;}
+#sonyBoxContent h3                              {color: #000; font-weight: normal; font-size: 16px; line-height: 22px; height: 22px;}
+#sonyBoxContent p                               {margin-bottom: 20px; font-size: 14px; line-height: 20px;}
+ 
+#sonyBoxFooter #footerPrevPage  {float: left; font-size: 14px; line-height: 25px; text-align: left; padding-left: 82px; margin-left: -70px; color: #7f7f7f; height: 50px; vertical-align: middle;}
+#sonyBoxFooter #footerNextPage  {float: right; font-size: 14px; line-height: 25px; text-align: right; padding-right: 82px; margin-right: -70px; color: #7f7f7f; height: 50px; vertical-align: middle;}
+#sonyBoxFooter.hover #footerPrevPage    {background: url(/images/buttonLeft.png) left center no-repeat;}
+#sonyBoxFooter.hover #footerNextPage    {background: url(/images/buttonRight.png) right center no-repeat;}
+#sonyBoxFooter.hover #footerPrevPage:hover      {background: url(/images/buttonLeftHover.png) left center no-repeat; color: #10a4fa;}
+#sonyBoxFooter.hover #footerNextPage:hover      {background: url(/images/buttonRightHover.png) right center no-repeat; color: #10a4fa;}
+.footerRightButton                                              {width: 288px;}
+ 
+.sonyBoxNode                                    {margin-top: 0px; padding: 45px 0px;}****/
+
+#newsListButton{background:url(/images/tit_news_center.gif) no-repeat 0 0;height:16px;overflow:hidden;width:83px;text-indent:-1000px;display:block;margin-left:12px;margin-top:20px}
+#news_hover .list_media .aaa .dis a{color:#595959;}
+
+/********************** NewCenterBanner *********/
+#NewCenterBanner                     {overflow: hidden; width:100%; position: relative; margin-top: 44px;}
+#NewCenterBannerArea                                                         {width:960px; margin: 0px auto; position: relative; height: 272px;}
+
+#NewCenterBannerArea                                                         {width:960px; margin: 0px auto; position: relative; height: 272px;}
+#NewCenterBannerArea ul                                                      {position: absolute; width: 2880px; top: 0px; left: 0px; height: 272px;z-index:50;}
+#NewCenterBannerArea li                                                      {float: left; width: 232px; margin-right: 4px; display: inline;margin-left:4px;position:relative;}
+#NewCenterBannerArea a                            {color: #595959; font-size: 14px; line-height: 18px; text-decoration: none;}
+#NewCenterBannerArea a:hover                        {color: #595959;}
+#NewCenterBannerArea a .newRecommendDetail        {background-color: #eff0f1; height: 100px; font-size: 14px; font-weight: inherit; position: relative;}
+#NewCenterBannerArea a:hover .newRecommendDetail    {background-color: #eff0f1;}
+#NewCenterBannerArea a .icon{position:absolute;left:15px;top:156px;}
+#NewCenterBannerArea p                                                       {padding: 14px 40px 15px 15px;line-height:20px}
+#NewCenterBannerArea a del                                           {width: 15px; height: 15px; display: block; position: absolute; top: 15px; right: 15px; background-image: url(/images/icon_img_jiantou.gif); background-repeat: no-repeat; background-position: 0px -21px;overflow:hidden}
+#NewCenterBannerArea a del.gallery                           {background-image: url(/images/icon_img_2.gif); width: 15px; height: 15px; background-position: 0px -18px;}
+#NewCenterBannerArea a:hover del                                     {background-position: 0px 0px;}
+#NewCenterBannerArea a:hover *                                       {cursor: pointer;}
+
+.index_friend_link .list_img li div {padding:10px; height: 94px; width: 132px; position: absolute; bottom: 0px; left: 0px; display: none; background-color: #f0f1f2; color: #50bcfd;cursor:pointer}
+.media_date_bg {
+    background: none repeat scroll 0 0 #D0D1D3;
+    color: #F0F1F2;
+    font-size: 9px;
+    line-height: 18px;
+    padding: 0 4px;
+    position:absolute;
+    left:15px;
+    top:0px;
+}
+.index_friend_link .list_img li div p{ position:absolute; top:26px; left:15px; width:120px;color:#595959;}
+ 
+/****************************************************************
+********************* COMPANY DETAIL  BOX 1**********************
+*****************************************************************/
+
+#sonyBoxBg                        {background: #fff; z-index: 1000; width:100%;}
+#sonyBox                        { position: absolute; top: 0px; left: 0px; width: 100%; z-index: 1001;}
+#sonyBoxHeader                    {background:#fff; z-index: 1002; padding-top: 10px; width: 100%;}
+#sonyBoxTitle h1                                {font-size: 22px; line-height: 28px; height: 28px; float: left; color: #000; font-weight: normal;margin-left:3px; overflow: hidden;}/*20140429*/
+#sonyBoxTitle #gotoGallery              {margin: 4px 10px; color: #808080; background: url() 10px 1px no-repeat; height: 20px; line-height: 20px; font-size: 14px; padding-left: 36px; border-left: 1px solid #000;}
+
+
+#companyDetailBoxDes                        { position:absolute; top:-3px; left: 8px; font-size: 14px; line-height: 30px; height: 30px;}
+#companyDetailBoxDes span{font-size:13px;margin-left:5px;}
+#companyDetailBoxTitle h1                {   font-size: 20px; line-height: 70px; height: 25px; float: left; color: #000; font-weight: normal; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif;margin-left:7px;}
+#companyDetailBoxTitle #gotoGallery        {margin: 24px 10px; color: #808080; background: url(/images/gotoGallery_icon.gif) 10px 1px no-repeat; height: 20px; line-height: 20px; font-size: 14px; padding-left: 36px; border-left: 1px solid #000;}
+#sonyBoxHeader #prevPage, #sonyBoxHeader #nextPage        {position: absolute; height: 50px; width: 50px;}/*20140504*/
+#sonyBoxHeader #prevPage        {background: url(/images/buttonLeft.png) no-repeat; left: -65px;}/*20140504*/
+#sonyBoxHeader #prevPage:hover    {background: url(/images/buttonLeftHover.png) no-repeat;}
+#sonyBoxHeader #nextPage        {background: url(/images/buttonRight.png) no-repeat; right: -65px;}/*20140504*/
+#sonyBoxHeader #nextPage:hover    {background: url(/images/buttonRightHover.png) no-repeat;}
+#sonyBoxHeader #sonyBoxClose    {position: absolute; top: 12px; right: 16px;}
+
+#companyDetailBoxContent                    {margin: 0px auto; padding-top: 90px; width: 100%;}
+#companyDetailBoxContent .house img { margin-bottom:60px; padding-left:3px; padding-top:-1px;}
+#companyDetailBoxContent h3                {color: #000; font-size: 16px;  height: 16px; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif; text-indent:1px;line-height:16px}
+#companyDetailBoxContent p                {margin-bottom: 20px; font-size: 14px; line-height: 20px; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif;}
+.companyDetailBoxNode                    {margin-top: 0px; padding: 55px 0px;padding-bottom:20px\9;}
+.companyDetailBoxNode .comHouse{margin-left:4px}
+.companyDetailBoxNode .comPerson{margin-left:4px}
+#sonyBoxFooter #footerPrevPage  {float: left; font-size: 14px; line-height: 25px; text-align: left; padding-left: 82px; margin-left: -70px; color: #7f7f7f; height: 50px; vertical-align: middle;}
+#sonyBoxFooter #footerNextPage  {float: right; font-size: 14px; line-height: 25px; text-align: right; padding-right: 82px; margin-right: -70px; color: #7f7f7f; height: 50px; vertical-align: middle;}
+#sonyBoxFooter.hover #footerPrevPage    {background: url(/images/buttonLeft.png) left center no-repeat;}
+#sonyBoxFooter.hover #footerNextPage    {background: url(/images/buttonRight.png) right center no-repeat;}
+#sonyBoxFooter.hover #footerPrevPage:hover      {background: url(/images/buttonLeftHover.png) left center no-repeat; color: #10a4fa;}
+#sonyBoxFooter.hover #footerNextPage:hover      {background: url(/images/buttonRightHover.png) right center no-repeat; color: #10a4fa;}
+.footerRightButton                                              {width: 288px;}
+
+.comDetailClose img{ position: absolute; top: -2px; right: 9px;}
+.h66{ height:66px;}
+.h88{ height:88px;}
+.plr-27{ padding-left: 27px; padding-right: 27px;}
+.introduce{ width:200px; margin-top:34px; margin-left:10px;} 
+
+ /****************************************************************
+********************* COMPANY DETAIL  BOX 2**********************
+*****************************************************************/
+#companyDetailBox2Des                        { position:absolute; top:-3px; left: 8px; font-size: 14px; line-height: 30px; height: 30px;}
+#companyDetailBox2Des span{font-size:13px;margin-left:5px;}
+#companyDetailBox2Title h1                {font-size: 20px; line-height: 70px; height: 25px; float: left; color: #000; font-weight: normal;margin-left:7px;}
+#companyDetailBox2Content                    {margin: 0px auto;width: 100%;}
+#companyDetailBox2Content h3                {color: #000; font-weight: normal; font-size: 16px; line-height: 22px; height: 22px; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif;}
+#companyDetailBox2Content p                {margin-bottom: 20px; font-size: 14px; line-height: 20px; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif;}
+.companyDetailBox2Node                    {margin-top: 0px; padding: 61px 0px;}
+.comDetail2Close img{ position: absolute; top: -2px; right: 9px;}
+
+.introduce2{ width:200px; margin-top:29px; margin-left:10px;}
+.box{ height:294px;}
+/****************************************************************
+*********************PRODUCT NEWS BOX1  *************************
+*****************************************************************/
+#productNewsBoxDes { position: absolute; top: -7px; left: 8px; font-size: 14px; line-height: 20px; height: 20px;}
+#productNewsBoxTitle h1    { position: absolute; top: 20px; left: 15px; width:385px; font-size: 22px; line-height: 25px; height: 25px; float: left; color: #000; font-weight: normal; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif;}
+#productNewsBoxTitle #gotoGallery { position: absolute; top: 19px; left: 390px; margin: 4px 10px; color: #808080; background: url() 10px 1px no-repeat; height: 20px; line-height: 20px; font-size: 14px; padding-left: 36px; border-left: 1px solid #000;}
+#sonyBoxHeader #sonyBoxClose    {position: absolute; top: 12px; right: 16px;}
+.productNewsBoxNode    {margin-top: 0px; padding: 50px 0px;}
+.proNews_camera img{ padding-bottom:55px; padding-left:4px; padding-top:-1px;}
+.proNewsClose img{ position: absolute; top: -2px; right: 9px;}
+#productNewsBoxContent    {margin: 0px auto; padding-top: 88px; width: 100%;}
+#productNewsBoxContent p {margin-bottom: 20px; font-size: 14px; line-height: 22px; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif;}
+#productNewsBoxContent p.p1, #productNewsBoxContent p.p2 {color: #000; font-size: 18px; margin-bottom: 0px; line-height:30px; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif; text-indent:1px;}
+#productNewsBoxContent p.p2{ margin-bottom: 10px;}
+.proNews_introduce{ width:180px; margin-top:27px; margin-left:10px;}
+
+/****************************************************************
+*********************PRODUCT NEWS BOX2  ************************
+*****************************************************************/
+
+#productNewsBox2Des { position: absolute; top: -7px; left: 8px; font-size: 14px; line-height: 20px; height: 20px; }
+#productNewsBox2Title h1    {  position: absolute; top: 20px; left: 15px;  width:385px; font-size: 22px; line-height: 25px; height: 25px; float: left; color: #000; font-weight: normal; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif;}
+#productNewsBox2Title #gotoGallery { position: absolute; top: 19px; left: 360px; margin: 4px 10px; color: #808080; background: url() 10px 1px no-repeat; height: 20px; line-height: 20px; font-size: 14px; padding-left: 36px; border-left: 1px solid #000;}
+#sonyBoxHeader #sonyBoxClose    {position: absolute; top: -12px; right: 60px;width:30px;height:30px;background:url(/images/closeicon_new2014.png) top no-repeat;}/*20140504*/
+#sonyBoxHeader #sonyBoxClose:hover{background-position:0 -30px;}/*20140504*/
+
+.proNews2Close img{ position: absolute; top: -2px; right: 9px;}
+.productNewsBox2Node    {margin-top: 0px; padding: 50px 0px;}
+.proNews_camera img{ padding-bottom:55px; padding-left:4px; padding-top:-1px;}
+
+#productNewsBox2Content    { margin: 0px auto; padding-top: 88px; width: 100%;}
+#productNewsBox2Content p { color: #787878; margin-bottom: 20px; font-size: 14px; line-height: 22px; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif;}
+#productNewsBox2Content p.p1, #productNewsBox2Content p.p2 {color: #000; font-size: 18px; margin-bottom: 0px; line-height:30px; font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB",Sans-Serif; text-indent:1px;}
+#productNewsBox2Content p.p2{ margin-bottom: 10px;}
+.proNews_introduce{ width:180px; margin-top:27px; margin-left:10px;}
+ul.pic_list li img{ padding-left:4px; padding-bottom:7px;}
+#meiti_more{position:absolute;right:8px;background:url(/images/more_button_white.gif) top no-repeat;width:66px;height:40px;top:-10px}
+#meiti_more:hover{background-position: 0 -40px;}
+ 
+
+/******************************share****************************/
+#sharearea{float:right;margin-top:20px;margin-right:-8px;}
+#sharearea a{background:url(/images/index_share_bg.gif);width:30px;height:30px;float:left;padding-left:3px;}
+#sharearea .share_sina{background-position:-5px -5px;}
+#sharearea .share_sina:hover{background-position:-5px -45px;}
+#sharearea .share_qq{background-position:-38px -5px;}
+#sharearea .share_qq:hover{background-position:-38px -45px;}
+#sharearea .share_sohu{background-position:-71px -5px;}
+#sharearea .share_sohu:hover{background-position:-71px -45px;}
+#sharearea .share_renren{background-position:-104px -5px;}
+#sharearea .share_renren:hover{background-position:-104px -45px;}
+#sharearea .share_kaixin{background-position:-137px -5px;}
+#sharearea .share_kaixin:hover{background-position:-137px -45px;}
+
+/*20140304 share news*/
+.share_button { position: absolute; bottom: 13px; right: 13px; z-index: 2;}
+.share_button .sh_b { background: url("/images/share_icon.png") no-repeat; text-indent: -9999em; display: block; width: 30px; height: 30px; cursor: pointer;}
+.share_button ul { position: absolute; bottom: 0px; right: 0px; width: 170px; display: none;}
+.share_button ul li { float: left;}
+.share_button li a { width: 35px; height: 30px; background: url("/images/index_share_bg.png") no-repeat; display: block;}
+.share_button .sh_sina{background-position:0px -30px; width: 30px}
+.share_button .sh_sina:hover{background-position:0px 0px;}
+.share_button .sh_qq{background-position:-30px -30px;}
+.share_button .sh_qq:hover{background-position:-30px 0px;}
+.share_button .sh_sohu{background-position:-65px -30px;}
+.share_button .sh_sohu:hover{background-position:-65px 0px;}
+.share_button .sh_renren{background-position:-100px -30px;}
+.share_button .sh_renren:hover{background-position:-100px 0px;}
+.share_button .sh_qzone{background-position:-135px -30px;}
+.share_button .sh_qzone:hover{background-position:-135px 0px;}

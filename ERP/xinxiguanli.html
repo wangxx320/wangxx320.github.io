@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>信息管理</title>
+<style>
+	*{
+		margin:0;
+		padding:0;}
+	a{
+		text-decoration:none;
+		font-size:12px;}
+	body{
+		font-family:"微软雅黑";}
+ 	#one{
+		background:#FFDCA9;
+		border-bottom:1px solid #F1B791;
+		border-left:2px solid #F1B791;
+		height:39px;}
+	#one a{
+		color:#000;
+		position:relative;
+		top:10px;
+		left:10px;}
+	#one a:hover{
+		color:#EB5409;}
+	#one span{
+		font-size:12px;
+		font-weight:bold;
+		color:#DC4E00;
+		position:relative;
+		top:10px;
+		left:10px;}
+	#two{
+		overflow:hidden;
+		height:510px;
+		border-left:1px solid #F1B791;}
+	#two .one{
+		line-height:20px;
+		text-align:center;
+		width:60px;
+		position:relative;
+		top:21px;
+		left:30px;
+		font-size:14px;
+		font-weight:bold;
+		border-bottom:3px solid #F99331;}
+	hr{
+		margin-top:20px;
+		margin-left:30px;
+		width:95%;
+		size:1px;
+		color:#EADCC8;}
+	.in{
+		width:345px;
+		height:32px;
+		border:1px solid #C3AB7D;}
+	#text{
+		width:525px;
+		height:155px;
+		border:1px solid #C3AB7D;}
+	#buttom{
+		width:135px;
+		height:32px;
+		border-radius:3px;
+		background:#ED5A11;
+		font-size:16px;
+		font-weight:bold;
+		color:#FFF;
+		border:none;}
+	table{
+		margin-left:30px;
+		font-size:12px;}
+	table tr{
+		height:40px;}
+	.t{
+		width:80px;}
+	span{
+		color:#7F7F7F;}
+	a{
+		text-decoration:none;
+		margin-left:30px;}
+</style>
+</head>
+
+<body>
+	<div id="one">
+    	<span>位置：</span><a href="#">首页</a><span>&gt;</span><a href="#">表单</a>
+    </div>
+    <div id="two">
+    	<form action="#" method="post">
+        	<div class="one">基本信息</div>
+            <hr />
+        	<table>
+            	<tr>
+                	<td class="t">文章标题</td>
+                    <td><input type="text" name="title" class="in" />    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>标题不能超过30个字符</span></td>
+                </tr>
+                <tr>
+                	<td>关键字</td>
+                    <td><input type="text" name="key" class="in" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>多个关键字用,隔开</span></td>
+                </tr>
+                <tr>
+                	<td>是否审核</td>
+                    <td>
+                    	<input type="radio" name="shi" value="是" checked="checked" />是
+                        <input type="radio" name="shi" value="否" />否
+                    </td>
+                </tr>
+                <tr>
+                	<td>引用地址</td>
+                    <td>
+                    	<input type="text" name="title" 
+                        value="http://www.uimaker.com/uimakerhtml/uidesign/" class="in" />
+                    </td>
+                </tr>
+                <tr>
+                	<td>文章内容</td>
+                    <td><textarea id="text"></textarea></td>
+                </tr>
+                <tr>
+                	<td></td>
+                    <td><input type="button" value="确认保存" id="buttom" /></td>
+                </tr>
+            </table>
+        </form>
+        <a href="main.html" target="_top">返回首页</a>
+    </div>
+
+</body>
+</html>
