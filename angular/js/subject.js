@@ -218,25 +218,25 @@ angular.module("app.subject",["ng","ngRoute"])
                 return index==0?'A':(index==1?'B':(index==2?'C':(index==3?'D':'E')));
             },
             getAllTypes : function (handler) {
-                $http.get("data/types.json").success(function (data) {
+                $http.get("data/Types.json").success(function (data) {
                 // $http.get("http://172.16.0.5:7777/test/exam/manager/getAllSubjectType.action").success(function (data) {
                     handler(data);
                 });
             },
             getAllLevels : function (handler) {
-                $http.get("data/levels.json").success(function (data) {
+                $http.get("data/Levels.json").success(function (data) {
                 // $http.get("http://172.16.0.5:7777/test/exam/manager/getAllSubjectLevel.action").success(function (data) {
                     handler(data);
                 });
             },
             getAllDepartmentes : function (handler) {
-                $http.get("data/departmentes.json").success(function (data) {
+                $http.get("data/Departmentes.json").success(function (data) {
                 // $http.get("http://172.16.0.5:7777/test/exam/manager/getAllDepartmentes.action").success(function (data) {
                     handler(data);
                 });
             },
             getAllTopics : function (handler) {
-                $http.get("data/topics.json").success(function (data) {
+                $http.get("data/Topics.json").success(function (data) {
                 // $http.get("http://172.16.0.5:7777/test/exam/manager/getAllTopics.action").success(function (data) {
                     handler(data);
                 });
