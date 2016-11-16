@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--支持移动端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>和讯大数据</title>
+    <!--框架导入-->
+    <link rel="stylesheet" href="frameworks/bootstrap-3.3.0-dist.zip/css/bootstrap.css">
+    <script src="frameworks/jquery-2.1.4/jquery.js"></script>
+    <script src="frameworks/bootstrap-3.3.0-dist.zip/js/bootstrap.js"></script>
+    <!--自定义导入-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <!--头部-->
+        <div class="header">
+            <!--第一行-->
+            <div class="row row-one">
+                <!--left  logo-->
+                <div class="col-sm-3 col-xs-6">
+                    <a href=""><img src="images/u293.png"></a>
+                </div>
+                <!--大屏时隐藏 center-->
+                <div class="col-sm-6 hidden-xs tabs">
+                    <div class="row">
+                        <div class="col-sm-4 tabs-item"><a href="#alls">全体图像</a></div>
+                        <div class="col-sm-4 tabs-item active"><a href="#groups">群体图像</a></div>
+                        <div class="col-sm-4 tabs-item"><a href="#personals">个体图像</a></div>
+                    </div>
+                </div>
+                <!--right  按钮组-->
+                <div class="col-sm-3 col-xs-6 text-right btns-control">
+                    <button class="btn btn-danger btn-xs">注册</button>
+                    <button class="btn btn-danger btn-xs">登录</button>
+                </div>
+            </div>
+
+
+            <!--第二行横线极小屏下不显示-->
+            <div class="row row-two hidden-xs">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6 tabs">
+                    <div class="col-sm-4 tabs-item"></div>
+                    <div class="col-sm-4 tabs-item active"></div>
+                    <div class="col-sm-4 tabs-item"></div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <!--第三行-->
+            <div class="row-three hidden-xs">
+                群体画像是对目标用户群体真实特征的勾勒
+            </div>
+
+            <!--极小屏下显示-->
+            <div class="visible-xs row-four">
+                <ul class="nav nav-tabs">
+                    <li><a href="#all" data-toggle="tab">全体画像</a></li>
+                    <li class="active"><a href="#group" data-toggle="tab">群体画像</a></li>
+                    <li><a href="#personl" data-toggle="tab">个体画像</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane" id="all">...</div>
+                    <div class="tab-pane active" id="group">群体画像是对目标用户群体真实特征的勾勒</div>
+                    <div class="tab-pane" id="personal">...</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--header  end-->
+
+        <!--search begin-->
+        <div class="row search">
+
+            <!--标签-->
+                <div class="labels">
+                    <a href="" class="label label-danger">
+                        用户注册
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </a>
+                    <a href="" class="label label-danger">
+                        高频
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </a>
+                    <a href="" class="label label-danger">
+                        体育用品
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </a>
+            </div>
+
+            <!--横线-->
+            <div class="label-bar"></div>
+
+            <!--筛选按钮-->
+            <div class="row-seven">
+                <div class="dropdown">
+                    <a class="btn btn-default" data-toggle="dropdown">全部 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">访问频数</a></li>
+                        <li><a href="">访问生命周期</a></li>
+                        <li><a href="">交易生命周期</a></li>
+                        <li><a href="">个人长期关注</a></li>
+                        <li><a href="">个人购买倾向</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a class="btn btn-default" data-toggle="dropdown">频数 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">中频</a></li>
+                        <li><a href="">高频</a></li>
+                        <li><a href="">低频</a></li>
+                        <li><a href="">极高频</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a class="btn btn-default" data-toggle="dropdown">生命周期 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">考察期</a></li>
+                        <li><a href="">形成期</a></li>
+                        <li><a href="">成熟期</a></li>
+                        <li><a href="">衰退期</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a class="btn btn-default" data-toggle="dropdown">交易周期 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">考察期</a></li>
+                        <li><a href="">形成期</a></li>
+                        <li><a href="">成熟期</a></li>
+                        <li><a href="">衰退期</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a class="btn btn-default" data-toggle="dropdown">长期关注 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">全部</a></li>
+                        <li><a href="">理财</a></li>
+                        <li><a href="">股票</a></li>
+                        <li><a href="">基金</a></li>
+                        <li><a href="">期货</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a class="btn btn-default" data-toggle="dropdown">个人购买倾向 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">全部</a></li>
+                        <li><a href="">3c产品</a></li>
+                        <li><a href="">服装</a></li>
+                        <li><a href="">家电</a></li>
+                        <li><a href="">培训</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--内容-->
+            <div class="search-content hidden-xs">
+                <div class="search_top">高级筛选</div>
+                <div class="search_content">
+                    <div>
+                        <ul class="list-inline">
+                            <li>访问频数</li>
+                            <li><a href="">全部</a></li>
+                            <li><a href="">中频</a></li>
+                            <li><a href="">高频</a></li>
+                            <li><a href="">低频</a></li>
+                            <li><a href="">极高频</a></li>
+                            <li class="last"><a href=""><span>+</span>多选</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-inline">
+                            <li>访问生命周期</li>
+                            <li><a href="">全部</a></li>
+                            <li><a href="">考察期</a></li>
+                            <li><a href="">形成期</a></li>
+                            <li><a href="">成熟期</a></li>
+                            <li><a href="">衰退期</a></li>
+                            <li class="last"><a href=""><span>+</span>多选</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-inline">
+                            <li>交易生命周期</li>
+                            <li><a href="">全部</a></li>
+                            <li><a href="">考察期</a></li>
+                            <li><a href="">形成期</a></li>
+                            <li><a href="">成熟期</a></li>
+                            <li><a href="">衰退期</a></li>
+                            <li class="last"><a href=""><span>+</span>多选</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-inline">
+                            <li>个人长期关注</li>
+                            <li><a href="">全部</a></li>
+                            <li><a href="">理财</a></li>
+                            <li><a href="">股票</a></li>
+                            <li><a href="">基金</a></li>
+                            <li><a href="">期货</a></li>
+                            <li class="last"><a href=""><span>+</span>多选</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-inline last">
+                            <li>个人购买倾向</li>
+                            <li><a href="">全部</a></li>
+                            <li><a href="">3c产品</a></li>
+                            <li><a href="">服装</a></li>
+                            <li><a href="">家电</a></li>
+                            <li><a href="">培训</a></li>
+                            <li class="last"><a href=""><span>+</span>多选</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="alert alert-danger">尊敬的用户您好！您所关心的用户群体总共有1500人，占总量10%。详情请见。。。。</div>
+            </div>
+
+
+
+
+
+
+        <!--search end-->
+
+        <div class="table-divider"></div>
+
+        <!--table-->
+        <div class="table-responsive">
+            <table class="table table-bordered table-condensed text-center table-striped">
+                <thead>
+                <tr class="bg-danger">
+                    <th><input type="checkbox">全选</th>
+                    <th>用户ID</th>
+                    <th>性别</th>
+                    <th>注册类型</th>
+                    <th>年龄<span class="caret"></span></th>
+                    <th>访问时长<span class="caret"></span></th>
+                    <th>访问页面<span class="caret"></span></th>
+                    <th>访问次数<span class="caret"></span></th>
+                    <th>标签</th>
+                    <th>更多详情>></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox">1</td>
+                    <td>1912460835</td>
+                    <td>女</td>
+                    <td>非注册</td>
+                    <td>9</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>小股民</td>
+                    <td><span class="glyphicon glyphicon-search"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">2</td>
+                    <td>1912460835</td>
+                    <td>女</td>
+                    <td>注册</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>小股民</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">3</td>
+                    <td>1912460835</td>
+                    <td>女</td>
+                    <td>非注册</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>小股民</td>
+                    <td><span class="glyphicon glyphicon-search"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">4</td>
+                    <td>1912460835</td>
+                    <td>女</td>
+                    <td>注册</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>小股民</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">5</td>
+                    <td>1912460835</td>
+                    <td>女</td>
+                    <td>非注册</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>小股民</td>
+                    <td><span class="glyphicon glyphicon-search"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">6</td>
+                    <td>1912460835</td>
+                    <td>女</td>
+                    <td>注册</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>小股民</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">7</td>
+                    <td>1912460835</td>
+                    <td>女</td>
+                    <td>非注册</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>小股民</td>
+                    <td><span class="glyphicon glyphicon-search"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">8</td>
+                    <td>1912460835</td>
+                    <td>女</td>
+                    <td>注册</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>小股民</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">9</td>
+                    <td>1912460835</td>
+                    <td>女</td>
+                    <td>非注册</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>小股民</td>
+                    <td><span class="glyphicon glyphicon-search"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">10</td>
+                    <td>1912460835</td>
+                    <td>女</td>
+                    <td>注册</td>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>小股民</td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!--分页-->
+            <div class="row row-five">
+                <div class="col-xs-12 text-right">
+                    <span>每页显示</span>
+                    <span class="span"><a href="">10</a></span>
+                    <span class="span"><a href="">20</a></span>
+                    <span class="span"><a href="">50</a></span>
+                    <span>条共100条</span>
+                    <span class="span"> <a href=""><</a> </span>
+                    <span><a href="">1</a>/<a href="">2</a>页</span>
+                    <span class="span"> <a href="">></a> </span>
+                </div>
+            </div>
+
+        </div>
+
+        <!--底部-->
+        <div class="row row-six">
+            <div class="col-xs-12 text-center ">
+                和讯网 大数据|Email ： bdc@staff.htxun.com|Copyright c bdc.htxun All rights
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
