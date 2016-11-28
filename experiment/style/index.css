@@ -1,0 +1,232 @@
+/*左侧*/
+.mainLeft{
+    float: left;
+    width: 180px;
+    background: #fff;
+    position: fixed;
+}
+/*logo*/
+.mainLeft>.logo{
+    margin: 20px 0;
+}
+/*菜单*/
+.menu>ul>li{
+    margin-top: 20px;
+    position: relative;
+}
+.menu>ul>li>a>span{
+    margin-right: 10px;
+}
+.menu>ul>li>a{
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.current{
+    background: #ffd50f;
+}
+.menu>ul>li>span{
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -10px;
+    top:35%;
+}
+.sHidden{
+    background: #000;
+}
+
+/*右侧*/
+
+.mainRight{
+    overflow: hidden;
+    margin-left: 180px;
+    z-index: 2;
+}
+/*右侧头部*/
+.mainRight>.mainHead{
+    width: 100%;
+    overflow: hidden;
+    background: #561f9f;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+.mainHead .one{
+    flex: 8;
+}
+.mainHead .two{
+    flex: 3;
+    text-align: center;
+}
+.mainHead .three{
+    flex: 3;
+    text-align: right;
+}
+.mainHead .head-left{
+    height: 80px;
+    line-height: 80px;
+    flex:6;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.mainHead .head-center{
+    height: 80px;
+    line-height: 80px;
+    flex:2;
+    color: #cdb7f5;
+}
+.mainHead .head-center>a{
+    font-size: 20px;
+    color: #fff;
+}
+.mainHead .head-right{
+    width: 85px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #ac3032;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #851416;
+    margin-top: 26px;
+    cursor: pointer;
+}
+.mainHead .head-right:hover{
+    background: #851416;
+}
+
+
+/*内容区*/
+.content{
+    margin-top: 80px;
+    overflow: hidden;
+    background: #0C0B1E;
+}
+/*第一行*/
+.content .row-one{
+    height: 465px;
+}
+.content .l-bag{
+    width: 50%;
+    height: 465px;
+    background: url("../images/l-bag.jpg");
+    background-size: cover;
+}
+.r-bag .row-o div,.r-bag .row-t div{
+    width: 50%;
+    height: 232px;
+    background-size: cover;
+}
+.r-bag .row-o div{
+    margin-bottom: 1px;
+}
+.r-bag .row-o div:first-child{
+     background: url("../images/r-bag2.png") no-repeat;
+ }
+.r-bag .row-o div:last-child{
+    background: url("../images/r-bag1.png") no-repeat;
+}
+.r-bag .row-t div:first-child{
+    background: url("../images/r-bag1.png") no-repeat;
+}
+.r-bag .row-t div:last-child{
+    background: url("../images/r-bag2.png") no-repeat;
+}
+
+/*第二行*/
+.content .row-two{
+    margin-top: 30px;
+}
+.content .row-two div{
+    height: 260px;
+}
+.content .row-two div:nth-child(1){
+    background: #6117A0;
+}
+.content .row-two div:nth-child(2){
+    background: #3C2C79;
+}
+.content .row-two div:nth-child(3){
+    background: #9F2424;
+}
+
+/*第三行*/
+.content .row-three div{
+    margin-top: 30px;
+    height: 500px;
+    background: #00395F;
+}
+/*第四行*/
+.content .row-four div{
+    height: 245px;
+}
+.row-four div .setting{
+    width: 85px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+    background: #ffad00;
+    border-radius: 8px;
+    box-shadow: 0 3px 0 #AA830D;
+    margin-top: 26px;
+    cursor: pointer;
+}
+.row-four div .setting:hover{
+    background: #AA830D;
+}
+
+/*右侧尾部*/
+.mainRight>.fooTer{
+    margin: 0 10px;
+    width: 85%;
+    height: 88px;
+    position: fixed;
+    bottom: 0;
+}
+.high{
+    height: 370px;
+}
+.fooTer>div:first-child{
+    width: 85%;
+    height: 50px;
+    line-height: 50px;
+    color: #000;
+    padding-left: 40%;
+    cursor: pointer;
+    background: #ffad00;
+    border-top-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    position: fixed;
+}
+/*表格*/
+.fooTer>table th{
+    width: 85%;
+    background: #EAEAEA;
+    position: fixed;
+}
+.fooTer>div:last-child{
+    margin-top: 50px;
+    height: 320px;
+    background: #EAEAEA;
+    overflow: scroll;
+}
+.fooTer table th,td{
+    font-size: 15px;
+    text-align: center;
+}
+
+

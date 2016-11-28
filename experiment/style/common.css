@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+img{
+    border: none;
+    display: inline-block;
+}
+a,a:hover,a:active,a:visited,a:link{
+    text-decoration: none;
+    color: #000;
+}
+
+
