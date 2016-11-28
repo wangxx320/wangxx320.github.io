@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>搜索页面</title>
+    <link rel="stylesheet" href="framework/bootstrap-3.3.0-dist/css/bootstrap.css">
+    <script src="framework/jquery-2.1.4/jquery.min.js"></script>
+    <script src="framework/bootstrap-3.3.0-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <!--搜索页面头部开始-->
+    <header class="header">
+        <div class="row top">
+            <!--第一行-->
+            <div class="col-xs-8">
+                <img src="images/4-list_03.png" alt="">
+            </div>
+            <div class="col-xs-4 options">
+                <ul class="list-unstyled pull-right">
+                    <li>
+                        <span class="glyphicon glyphicon-download"></span>
+                    </li>
+                    <li><a href="#">APP</a></li>
+                </ul>
+                <ul class="list-unstyled pull-right">
+                    <li>
+                        <span class="glyphicon glyphicon-user"></span>
+                    </li>
+                    <li><a href="#">我的</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--第二行-->
+        <div class="row top1 bg-danger">
+            <div class="col-xs-12">
+                <form action="#">
+                    <div class="form-group form-group-lg">
+                        <label class="sr-only">搜索</label>
+                        <div class="input-group">
+                            <input type="text" name="search" class="form-control" placeholder="请输入小区名或是板块名称">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!--中间搜做开始-->
+    <article>
+    <div class="row text-center middels">
+        <div class="col-xs-12">
+            <!--<ul class="list-inline dropdown UL">
+                <li class="dropdown col-xs-3 LI">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        区域 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>one<input type="checkbox" name="checks"></li>
+                        <li>two<input type="checkbox" name="checks"></li>
+                        <li>three<input type="checkbox" name="checks"></li>
+                    </ul>
+                </li>
+                <li class="dropdown col-xs-3 LI">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        总价 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>123<input type="checkbox" name="checks"></li>
+                        <li>345<input type="checkbox" name="checks"></li>
+                        <li>234<input type="checkbox" name="checks"></li>
+                    </ul>
+                </li>
+                <li class="dropdown col-xs-3 LI">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        户型 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>dasd<input type="checkbox" name="checks"></li>
+                        <li>asdf<input type="checkbox" name="checks"></li>
+                        <li>afasf<input type="checkbox" name="checks"></li>
+                    </ul>
+                </li>
+                <li class="dropdown col-xs-3 LI">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        更多 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>adsas<input type="checkbox" name="checks"></li>
+                        <li>asf<input type="checkbox" name="checks"></li>
+                        <li>sfadfds<input type="checkbox" name="checks"></li>
+                    </ul>
+                </li>
+            </ul>-->
+            <div class="phoneview">
+                <ul class="list-inline dropdown row">
+                    <li  class="col-xs-3" data-toggle="dropdown" ><a href="#" >
+                        区域<span class="caret"></span>
+                    </a></li>
+                    <li data-toggle="dropdown" class="col-xs-3"><a href="#" >
+                        总价<span class="caret"></span>
+                    </a></li>
+                    <li  data-toggle="dropdown" class="col-xs-3"><a href="#">
+                        户型<span class="caret"></span>
+                    </a></li>
+                    <li  data-toggle="dropdown" class="col-xs-3">
+                        <a href="#">
+                        更多<span class="caret"></span>
+                        </a></li>
+                    <ul class="dropdown-menu">
+                        <li>one<input type="checkbox" name="checks"></li>
+                        <li>two<input type="checkbox" name="checks"></li>
+                        <li>three<input type="checkbox" name="checks"></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!--开始第二部分-->
+        <div class="row midd6">
+            <div class="col-xs-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="images/list_01.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">瞿溪路1240弄，光线充足，高...</h4>
+                        <h5>2室1厅&nbsp;&nbsp;46m<sup>2</sup></h5>
+                        <h5>万达广场<span>124万</span></h5>
+                        <span class="span">满五</span>
+                        <span class="span1">有地铁</span>
+                        <span class="span">有钥匙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  midd6">
+            <div class="col-xs-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="images/list_02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">瞿溪路1240弄，光线充足，高...</h4>
+                        <h5>2室1厅&nbsp;&nbsp;46m<sup>2</sup></h5>
+                        <h5>万达广场<span>124万</span></h5>
+                        <span class="span">满五</span>
+                        <span class="span1">有地铁</span>
+                        <span class="span">有钥匙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  midd6">
+            <div class="col-xs-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="images/list_02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">瞿溪路1240弄，光线充足，高...</h4>
+                        <h5>2室1厅&nbsp;&nbsp;46m<sup>2</sup></h5>
+                        <h5>万达广场<span>124万</span></h5>
+                        <span class="span">满五</span>
+                        <span class="span1">有地铁</span>
+                        <span class="span">有钥匙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  midd6">
+            <div class="col-xs-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="images/list_02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">瞿溪路1240弄，光线充足，高...</h4>
+                        <h5>2室1厅&nbsp;&nbsp;46m<sup>2</sup></h5>
+                        <h5>万达广场<span>124万</span></h5>
+                        <span class="span">满五</span>
+                        <span class="span1">有地铁</span>
+                        <span class="span">有钥匙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  midd6">
+            <div class="col-xs-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="images/list_02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">瞿溪路1240弄，光线充足，高...</h4>
+                        <h5>2室1厅&nbsp;&nbsp;46m<sup>2</sup></h5>
+                        <h5>万达广场<span>124万</span></h5>
+                        <span class="span">满五</span>
+                        <span class="span1">有地铁</span>
+                        <span class="span">有钥匙</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+</body>
+</html>

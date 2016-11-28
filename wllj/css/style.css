@@ -1,0 +1,149 @@
+a{
+    color: #000;
+    text-decoration: none;
+    font-family: "微软雅黑";
+}
+/*首页头部第一行*/
+header{
+    overflow: hidden;
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    background-origin: border-box;
+    margin: 0 -15px;
+}
+header>.header>div>div.left{
+    padding:50px 20px;
+}
+header>.header>div>div.left>div>button{
+    background-color: #000;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+header>.header>div.right>a{
+    padding: 30px 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+/*第二行*/
+header>div.header2>div>h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "黑体";
+    padding: 20px 0px 0px 0px;
+}
+header>div.header3>div>h2{
+    color:#ffffff;
+    text-align: center;
+    font-size:40px;
+}
+/*第四行*/
+header>.header4{
+    padding: 60px 10px 10px 10px;
+}
+/*中间第一部分*/
+.conts{
+    text-align: center;
+    border-bottom: 2px solid #C5C5C5;
+    padding-bottom: 40px;
+}
+.conts >div>a>img{
+    /*width: 100px;
+    height: 100px;*/
+    margin:50px 0px 20px 0px;
+}
+.conts >div>a{
+    font-size: 30px;
+}
+/*中间第二部分*/
+.midd1>div>div>ol.carousel-indicators>li{
+    background-color: #5E5E5E;
+    width: 20px;
+    height: 20px;
+}
+div.midd1>div.rows{
+    padding: 15px 0 10px 0;
+    background-color: #F4F4F4;
+}
+/*第三部分开始*/
+div.midd5{
+    font-size: 30px;
+    font-weight: bold;
+    padding:20px;
+    border: 2px solid #C9C9C9;
+}
+/*第四部分开始*/
+div.midd6{
+    padding: 20px 0;
+    border-bottom: 2px solid #C9C9C9;
+}
+div.midd6 img{
+    width: 124px;
+    height: 110px;
+   /* padding-top: 10px;*/
+}
+div.midd6 h4{
+    font-weight:500;
+}
+div.midd6 h5>span{
+    color: red;
+    margin-left: 20px;
+}
+div.midd6>div>div>div>span.span{
+    display: inline-block;
+    border:1px solid #4265ff;
+    color:#4265ff;
+}
+div.midd6>div>div>div>span.span1{
+    display: inline-block;
+    border:1px solid yellow;
+    color:yellow;
+}
+
+/*注册页面-------------------------------------------*/
+/*前三行*/
+div.head-top{
+    border-bottom: 1px solid #E9E9E9;
+    vertical-align: bottom;
+}
+div.head-top >div{
+    padding-top: 10px;
+}
+div.head-top >div>form>div>input{
+    width: 100%;
+    border: none;
+    height: 50px;
+    padding: 10px ;
+    margin-bottom: -15px;
+}
+.head-top>div.top p{
+    border: 1px solid #BABABA;
+    padding:10px;
+}
+/*注册登录按钮*/
+div.head-top1>div>form>div>input.form-control{
+    margin-top: 40px;
+}
+/*第五行*/
+div.zhuce>div>span>a.A{
+    color: #4BAC6E;
+    font-size: 12px;
+}
+/*登录页面-----------------------------------------*/
+div.denglu>div>span{
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 0;
+    font-weight: 700;
+}
+/*线条*/
+div.denglu1>div{
+    background-color: #D1D1D1;
+    height: 3px;
+}
+div.denglu1>div.div1{
+    background-color: #39AC6A;
+}
